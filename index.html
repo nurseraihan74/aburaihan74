@@ -1,0 +1,2435 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Abu Raihan | Nurse & Healthcare AI Specialist</title>
+  <meta name="description" content="Personal portfolio of Abu Raihan — Registered Nurse & Healthcare AI Specialist.">
+  <meta name="author" content="Abu Raihan">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Abu Raihan | Nurse">
+  <meta property="og:description" content="Healthcare Professional | Registered Nurse">
+  <meta property="og:image" content="https://res.cloudinary.com/ki4nxv0r/image/upload/v1794979502/unnamed.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://res.cloudinary.com/ki4nxv0r/image/upload/v1794979502/unnamed.png">
+
+  <!-- Google Fonts: Plus Jakarta Sans (Headings & Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            darkBg: '#0B1220',
+            cardBg: '#0F172A',
+            sectionAlt: '#111827',
+            borderDark: '#1E293B',
+            borderLight: 'rgba(255, 255, 255, 0.08)',
+            bodyGrey: '#CBD5E1',
+            mutedGrey: '#94A3B8',
+            accentCyan: '#22D3EE',
+            accentGreen: '#22C55E',
+            accentGold: '#EAB308',
+          },
+          backgroundImage: {
+            'accent-gradient': 'linear-gradient(135deg, #2563EB 0%, #7C3AED 100%)',
+            'accent-gradient-hover': 'linear-gradient(135deg, #1D4ED8 0%, #6D28D9 100%)',
+          },
+          maxWidth: {
+            'container': '1200px',
+          },
+          borderRadius: {
+            'card': '18px',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Embedded Global Design System CSS -->
+  <style>
+    /* Base resets and color variables */
+    :root {
+      --bg-dark: #0B1220;
+      --card-bg: #0F172A;
+      --section-alt: #111827;
+      --text-heading: #FFFFFF;
+      --text-body: #CBD5E1;
+      --text-muted: #94A3B8;
+      --accent-cyan: #22D3EE;
+      --accent-green: #22C55E;
+      --accent-gold: #EAB308;
+      --gradient-primary: linear-gradient(135deg, #2563EB 0%, #7C3AED 100%);
+      --gradient-hover: linear-gradient(135deg, #1D4ED8 0%, #6D28D9 100%);
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-body);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* Headings */
+    h1, h2, h3, h4, h5, h6 {
+      color: var(--text-heading);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    html, body {
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+
+    /* Blue-to-Violet Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0B1220;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: linear-gradient(180deg, #2563EB 0%, #7C3AED 100%);
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: linear-gradient(180deg, #1D4ED8 0%, #6D28D9 100%);
+    }
+
+    /* Card System with Enhanced Hover Lift */
+    .ds-card {
+      background-color: var(--card-bg);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 18px;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.45);
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .ds-card:hover {
+      border-color: rgba(37, 99, 235, 0.45);
+      transform: translateY(-5px);
+      box-shadow: 0 20px 35px -10px rgba(37, 99, 235, 0.2);
+    }
+
+    /* Button System: Fully Rounded Pill Buttons */
+    .btn-pill-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.75rem;
+      border-radius: 9999px;
+      font-weight: 600;
+      font-size: 0.875rem;
+      color: #FFFFFF;
+      background: var(--gradient-primary);
+      box-shadow: 0 4px 14px 0 rgba(37, 99, 235, 0.35);
+      transition: all 0.25s ease;
+      cursor: pointer;
+      text-decoration: none;
+      border: none;
+    }
+    .btn-pill-primary:hover {
+      background: var(--gradient-hover);
+      box-shadow: 0 6px 20px 0 rgba(124, 58, 237, 0.45);
+      transform: translateY(-1px);
+    }
+
+    .btn-pill-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.75rem;
+      border-radius: 9999px;
+      font-weight: 600;
+      font-size: 0.875rem;
+      color: var(--text-body);
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      transition: all 0.25s ease;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .btn-pill-secondary:hover {
+      border-color: rgba(255, 255, 255, 0.4);
+      background: rgba(255, 255, 255, 0.04);
+      color: #FFFFFF;
+      transform: translateY(-1px);
+    }
+
+    /* Loading Screen Animations */
+    #loading-screen {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background-color: #0B1220;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.6s ease, visibility 0.6s ease;
+    }
+
+    #loading-screen.fade-out {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .progress-bar-container {
+      width: 240px;
+      height: 4px;
+      background-color: rgba(255, 255, 255, 0.08);
+      border-radius: 9999px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .progress-bar-fill {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #2563EB, #7C3AED, #22D3EE);
+      border-radius: 9999px;
+      transition: width 0.15s ease-out;
+    }
+
+    /* Subtle Section Background Alternations */
+    .section-bg-main {
+      background-color: #0B1220;
+    }
+    .section-bg-alt {
+      background-color: #111827;
+    }
+
+    /* Section Padding System: Generous 80px - 100px */
+    .section-padding {
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
+    @media (min-width: 1024px) {
+      .section-padding {
+        padding-top: 6.25rem;
+        padding-bottom: 6.25rem;
+      }
+    }
+
+    /* Typewriter Blinking Cursor */
+    .typewriter-cursor::after {
+      content: '|';
+      display: inline-block;
+      margin-left: 3px;
+      animation: blinkCursor 0.9s infinite;
+      color: #22D3EE;
+      font-weight: 400;
+    }
+    @keyframes blinkCursor {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    /* Scroll Reveal & Slide-In Animation */
+    .reveal-on-scroll {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: opacity, transform;
+    }
+    .reveal-on-scroll.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* FAQ Accordion Smooth Expansion */
+    .faq-panel {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: max-height 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease, padding 0.35s ease;
+    }
+    .faq-panel.active,
+    .faq-panel.open {
+      max-height: 500px;
+      opacity: 1;
+      padding-top: 0.25rem;
+      padding-bottom: 1.5rem;
+    }
+  </style>
+</head>
+
+<body class="bg-darkBg text-bodyGrey selection:bg-accentCyan selection:text-darkBg relative">
+
+  <!-- Right Edge Vertical Scroll Progress Bar -->
+  <div id="scroll-progress-bar" class="fixed right-0 top-0 w-1 sm:w-1.5 bg-gradient-to-b from-[#2563EB] via-[#7C3AED] to-[#22D3EE] z-50 transition-all duration-75 pointer-events-none" style="height: 0%;"></div>
+
+  <!-- ========================================================
+       LOADING SCREEN
+       "{{FULL_NAME}} / {{TITLE}}" + Animated Progress Bar
+       ======================================================== -->
+  <div id="loading-screen">
+    <div class="text-center space-y-4 px-4">
+      
+      <!-- Brand Avatar / Icon Indicator -->
+      <div class="w-14 h-14 mx-auto rounded-full bg-gradient-to-tr from-[#2563EB] to-[#7C3AED] flex items-center justify-center text-white text-xl shadow-lg shadow-blue-500/20 animate-pulse">
+        <i class="fa-solid fa-user-nurse"></i>
+      </div>
+
+      <!-- Identity Text: FULL_NAME / TITLE -->
+      <div class="space-y-1">
+        <h1 class="text-xl sm:text-2xl font-bold tracking-tight text-white">Abu Raihan</h1>
+        <p class="text-xs sm:text-sm font-medium tracking-widest uppercase text-accentCyan">Nurse</p>
+      </div>
+
+      <!-- Animated Progress Bar -->
+      <div class="progress-bar-container mx-auto mt-6">
+        <div id="loading-progress" class="progress-bar-fill"></div>
+      </div>
+
+      <!-- Live Loading Percentage -->
+      <p id="loading-percentage" class="text-[11px] font-mono text-mutedGrey">0%</p>
+
+    </div>
+  </div>
+
+
+  <!-- ========================================================
+       STICKY HEADER / NAVBAR
+       Left: "{{FULL_NAME}}" bold white -> #home
+       Center: HOME, WHO AM I?, SOLUTIONS, RESULTS, CONTACT
+       Right: "Let's Talk" gradient pill button -> #contact
+       Mobile: Collapsible Hamburger Menu
+       ======================================================== -->
+  <header class="sticky top-0 z-50 bg-[#0B1220] border-b border-white/[0.08] transition-all duration-200">
+    <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Left: Logo Text "{{FULL_NAME}}" -->
+      <a href="#home" class="text-xl sm:text-2xl font-bold text-white hover:text-accentCyan transition-colors tracking-tight">
+        Abu Raihan
+      </a>
+
+      <!-- Center: Navigation Links in Exact Order -->
+      <nav class="hidden md:flex items-center space-x-1 lg:space-x-2 text-xs lg:text-sm font-semibold tracking-wider text-bodyGrey">
+        <a href="#home" class="px-3.5 py-2 rounded-full hover:text-white hover:bg-white/5 transition-all">HOME</a>
+        <a href="#about" class="px-3.5 py-2 rounded-full hover:text-white hover:bg-white/5 transition-all">WHO AM I?</a>
+        <a href="#services" class="px-3.5 py-2 rounded-full hover:text-white hover:bg-white/5 transition-all">SOLUTIONS</a>
+        <a href="#results" class="px-3.5 py-2 rounded-full hover:text-white hover:bg-white/5 transition-all">RESULTS</a>
+        <a href="#contact" class="px-3.5 py-2 rounded-full hover:text-white hover:bg-white/5 transition-all">CONTACT</a>
+      </nav>
+
+      <!-- Right: Blue-to-Violet Gradient Pill Button "Let's Talk" -->
+      <div class="hidden md:flex items-center">
+        <a href="#contact" class="btn-pill-primary">
+          <span>Let's Talk</span>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobile-menu-btn" type="button" aria-label="Toggle navigation menu" 
+              class="md:hidden w-10 h-10 rounded-full flex items-center justify-center text-bodyGrey hover:text-white hover:bg-white/5 transition-colors focus:outline-none">
+        <i id="menu-icon" class="fa-solid fa-bars text-lg"></i>
+      </button>
+
+    </div>
+
+    <!-- Mobile Collapsible Menu Dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#0B1220] border-b border-white/[0.08] px-6 py-6 transition-all duration-300">
+      <nav class="flex flex-col space-y-4 text-sm font-semibold tracking-wider text-bodyGrey">
+        <a href="#home" class="mobile-nav-link hover:text-white transition-colors py-1">HOME</a>
+        <a href="#about" class="mobile-nav-link hover:text-white transition-colors py-1">WHO AM I?</a>
+        <a href="#services" class="mobile-nav-link hover:text-white transition-colors py-1">SOLUTIONS</a>
+        <a href="#results" class="mobile-nav-link hover:text-white transition-colors py-1">RESULTS</a>
+        <a href="#contact" class="mobile-nav-link hover:text-white transition-colors py-1">CONTACT</a>
+        <div class="pt-2">
+          <a href="#contact" class="mobile-nav-link btn-pill-primary w-full text-center">
+            <span>Let's Talk</span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- ========================================================
+       MAIN PAGE CONTAINER: Centered max-width 1200px
+       Section Scaffolding: #home, #about, #services, #results, #contact
+       ======================================================== -->
+  <main class="w-full">
+
+    <!-- Section 1: #home (Hero Section - 2 Columns on Desktop) -->
+    <section id="home" class="section-bg-main section-padding border-b border-borderLight relative overflow-hidden">
+      <!-- Ambient Lighting / Glow Effect -->
+      <div class="absolute top-1/4 left-1/4 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+      <div class="absolute top-1/2 right-1/4 w-80 h-80 bg-purple-600/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+      <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          <!-- Left Column -->
+          <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+            
+            <!-- Small pill badge with green dot "Available for New Projects" -->
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0F172A] border border-white/10 text-xs font-semibold text-slate-200 shadow-sm">
+              <span class="w-2 h-2 rounded-full bg-accentGreen animate-pulse"></span>
+              <span>Available for New Projects</span>
+            </div>
+
+            <!-- Large Bold Heading with Typewriter rotating phrase in blue-cyan gradient -->
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.18]">
+              What I can build for you: <br class="hidden sm:inline">
+              <span class="bg-gradient-to-r from-[#2563EB] via-[#22D3EE] to-[#7C3AED] bg-clip-text text-transparent" id="hero-typewriter"></span><span class="typewriter-cursor"></span>
+            </h1>
+
+            <!-- 2 lines of subtext from BIO -->
+            <p class="text-base sm:text-lg text-bodyGrey max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+              Nurse Abu Raihan — Healthcare Professional | Registered Nurse. Committed to compassionate care, clinical knowledge, nursing excellence, and health education.<br class="hidden sm:inline">
+              Believe in the power of knowledge, humanity, and continuous learning to build a healthier society.
+            </p>
+
+            <!-- Two Buttons: Primary Gradient "Work With Me" and Outlined "Download CV" -->
+            <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+              <a href="#contact" class="btn-pill-primary w-full sm:w-auto">
+                <span>Work With Me</span>
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+              </a>
+              <a href="#contact" class="btn-pill-secondary w-full sm:w-auto">
+                <i class="fa-solid fa-file-arrow-down text-accentCyan"></i>
+                <span>Download CV</span>
+              </a>
+            </div>
+
+            <!-- Icon-only social links from MY INFO: Facebook, LinkedIn, GitHub, WhatsApp, Telegram, Instagram -->
+            <div class="pt-3 flex flex-wrap items-center justify-center lg:justify-start gap-3">
+              <span class="text-xs uppercase tracking-wider text-mutedGrey font-bold mr-1">Connect:</span>
+              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" 
+                 aria-label="Facebook Profile" 
+                 class="w-10 h-10 rounded-full bg-[#0F172A] border border-white/10 text-mutedGrey hover:text-white hover:border-[#2563EB] hover:bg-[#2563EB]/10 flex items-center justify-center transition-all shadow-sm">
+                <i class="fa-brands fa-facebook-f text-sm"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/rnaburaihan/" target="_blank" rel="noopener noreferrer" 
+                 aria-label="LinkedIn Profile" 
+                 class="w-10 h-10 rounded-full bg-[#0F172A] border border-white/10 text-mutedGrey hover:text-white hover:border-[#2563EB] hover:bg-[#2563EB]/10 flex items-center justify-center transition-all shadow-sm">
+                <i class="fa-brands fa-linkedin-in text-sm"></i>
+              </a>
+              <a href="https://www.github.com/" target="_blank" rel="noopener noreferrer" 
+                 aria-label="GitHub Profile" 
+                 class="w-10 h-10 rounded-full bg-[#0F172A] border border-white/10 text-mutedGrey hover:text-white hover:border-[#2563EB] hover:bg-[#2563EB]/10 flex items-center justify-center transition-all shadow-sm">
+                <i class="fa-brands fa-github text-sm"></i>
+              </a>
+              <a href="https://wa.me/8801959227346" target="_blank" rel="noopener noreferrer" 
+                 aria-label="WhatsApp" 
+                 class="w-10 h-10 rounded-full bg-[#0F172A] border border-white/10 text-mutedGrey hover:text-white hover:border-[#22C55E] hover:bg-[#22C55E]/10 flex items-center justify-center transition-all shadow-sm">
+                <i class="fa-brands fa-whatsapp text-sm text-accentGreen"></i>
+              </a>
+              <a href="https://www.telegram.com/" target="_blank" rel="noopener noreferrer" 
+                 aria-label="Telegram" 
+                 class="w-10 h-10 rounded-full bg-[#0F172A] border border-white/10 text-mutedGrey hover:text-white hover:border-[#22D3EE] hover:bg-[#22D3EE]/10 flex items-center justify-center transition-all shadow-sm">
+                <i class="fa-brands fa-telegram text-sm"></i>
+              </a>
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" 
+                 aria-label="Instagram" 
+                 class="w-10 h-10 rounded-full bg-[#0F172A] border border-white/10 text-mutedGrey hover:text-white hover:border-[#7C3AED] hover:bg-[#7C3AED]/10 flex items-center justify-center transition-all shadow-sm">
+                <i class="fa-brands fa-instagram text-sm"></i>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Circular Portrait Photo (420px on desktop, 256px on mobile) -->
+          <div class="lg:col-span-5 flex justify-center items-center">
+            <div class="relative flex items-center justify-center">
+              
+              <!-- Blue gradient glow behind the circular photo -->
+              <div class="absolute inset-0 bg-gradient-to-tr from-[#2563EB]/45 to-[#22D3EE]/35 rounded-full blur-2xl transform scale-110 pointer-events-none"></div>
+
+              <!-- Outer blue-to-cyan gradient ring wrapper: 256px mobile, 420px desktop -->
+              <div class="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-[420px] lg:h-[420px] rounded-full p-1.5 sm:p-2 bg-gradient-to-tr from-[#2563EB] to-[#22D3EE] shadow-2xl shadow-blue-500/20">
+                <!-- Inner circular photo container -->
+                <div class="w-full h-full rounded-full overflow-hidden bg-slate-900 border-2 sm:border-4 border-[#0B1220]">
+                  <img src="https://res.cloudinary.com/ki4nxv0r/image/upload/v1794979502/unnamed.png" 
+                       alt="Nurse Abu Raihan" 
+                       class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500 rounded-full">
+                </div>
+              </div>
+
+              <!-- Floating Stat Card 1: 5+ Experience -->
+              <div class="absolute -bottom-2 -left-3 sm:bottom-6 sm:-left-6 bg-[#0F172A]/95 backdrop-blur-md border border-white/10 rounded-2xl px-4 py-2.5 sm:px-5 sm:py-3 shadow-xl flex items-center gap-3">
+                <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-gradient-to-tr from-[#2563EB] to-[#7C3AED] flex items-center justify-center text-white text-sm shadow-md">
+                  <i class="fa-solid fa-award"></i>
+                </div>
+                <div>
+                  <div class="text-base sm:text-lg font-extrabold text-white leading-none">5+</div>
+                  <div class="text-[11px] sm:text-xs font-semibold text-mutedGrey mt-0.5">Experience</div>
+                </div>
+              </div>
+
+              <!-- Floating Stat Card 2: 10+ Projects Done -->
+              <div class="absolute -top-2 -right-3 sm:top-6 sm:-right-6 bg-[#0F172A]/95 backdrop-blur-md border border-white/10 rounded-2xl px-4 py-2.5 sm:px-5 sm:py-3 shadow-xl flex items-center gap-3">
+                <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-gradient-to-tr from-[#7C3AED] to-[#22D3EE] flex items-center justify-center text-white text-sm shadow-md">
+                  <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <div>
+                  <div class="text-base sm:text-lg font-extrabold text-white leading-none">10+</div>
+                  <div class="text-[11px] sm:text-xs font-semibold text-mutedGrey mt-0.5">Projects Done</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!-- Section 2: #about (About Section - 2 Columns on Desktop) -->
+    <section id="about" class="section-bg-alt section-padding border-b border-borderLight relative">
+      <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="max-w-3xl mb-14 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0F172A] border border-white/10 text-xs font-bold uppercase tracking-widest text-accentCyan mb-3">
+            WHO AM I
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+            Nurse Abu Raihan — Registered Nurse &amp; Healthcare Professional
+          </h2>
+          <p class="mt-3 text-sm sm:text-base text-mutedGrey max-w-2xl leading-relaxed">
+            Solving real healthcare, educational, and operational problems through practical AI automation — not just offering generic services.
+          </p>
+        </div>
+
+        <!-- 2 Columns Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+          
+          <!-- Left Column: Portrait Card with Badge -->
+          <div class="lg:col-span-5 flex justify-center">
+            <div class="relative w-full max-w-sm">
+              
+              <!-- Subtle Backdrop Ambient Glow -->
+              <div class="absolute -inset-1 bg-gradient-to-r from-blue-600/30 to-purple-600/30 rounded-[22px] blur-xl opacity-40 pointer-events-none"></div>
+
+              <!-- Main Card Container -->
+              <div class="ds-card relative overflow-hidden p-3.5 bg-[#0F172A] border border-white/10 rounded-[18px]">
+                <div class="aspect-[4/5] rounded-[14px] overflow-hidden bg-slate-900 relative group">
+                  <img src="https://res.cloudinary.com/ki4nxv0r/image/upload/v1794979502/unnamed.png" 
+                       alt="Nurse Abu Raihan" 
+                       class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+                  <div class="absolute inset-0 bg-gradient-to-t from-[#0B1220]/80 via-transparent to-transparent"></div>
+                  
+                  <!-- Bottom Info Strip -->
+                  <div class="absolute bottom-4 left-4 right-4 text-white">
+                    <span class="inline-block px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-[#2563EB]/90 text-white mb-1">
+                      Nurse Abu Raihan
+                    </span>
+                    <h3 class="font-bold text-base text-white">Healthcare Professional | Registered Nurse</h3>
+                    <p class="text-xs text-mutedGrey">kodaliya Tangail</p>
+                  </div>
+                </div>
+
+                <!-- Floating Badge: 5+ Years Experience -->
+                <div class="absolute -bottom-2.5 -right-2.5 bg-[#0B1220]/95 backdrop-blur-md border border-white/15 rounded-2xl px-4 py-2.5 shadow-2xl flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#2563EB] to-[#7C3AED] flex items-center justify-center text-white text-base shadow-md">
+                    <i class="fa-solid fa-user-nurse"></i>
+                  </div>
+                  <div>
+                    <div class="text-sm font-bold text-white">5+ Years Experience</div>
+                    <div class="text-[11px] font-medium text-accentCyan">Registered Nurse</div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Right Column: Approach Body & 4 Feature Rows -->
+          <div class="lg:col-span-7 space-y-6">
+            
+            <!-- Short Bio from MY INFO -->
+            <p class="text-base text-bodyGrey leading-relaxed">
+              Nurse Abu Raihan — Healthcare Professional | Registered Nurse. Committed to compassionate care, clinical knowledge, nursing excellence, and health education. Believe in the power of knowledge, humanity, and continuous learning to build a healthier society.
+            </p>
+
+            <!-- 4 Feature Rows with Blue Icon Tiles -->
+            <div class="space-y-4 pt-2">
+              
+              <!-- Feature Row 1 -->
+              <div class="flex items-start gap-4 p-3.5 rounded-2xl bg-[#0F172A]/70 border border-white/[0.06] hover:border-blue-500/30 transition-all">
+                <div class="w-11 h-11 rounded-xl bg-blue-600/15 border border-blue-500/20 text-blue-400 flex items-center justify-center text-lg shrink-0">
+                  <i class="fa-solid fa-heart-pulse"></i>
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold text-white leading-snug">Clinical & Evidence-Based Foundation</h4>
+                  <p class="text-xs text-mutedGrey mt-0.5 leading-relaxed">
+                    Grounded in 5+ years of active nursing practice, clinical workflows, and high healthcare standards.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Feature Row 2 -->
+              <div class="flex items-start gap-4 p-3.5 rounded-2xl bg-[#0F172A]/70 border border-white/[0.06] hover:border-blue-500/30 transition-all">
+                <div class="w-11 h-11 rounded-xl bg-blue-600/15 border border-blue-500/20 text-blue-400 flex items-center justify-center text-lg shrink-0">
+                  <i class="fa-solid fa-arrows-spin"></i>
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold text-white leading-snug">Nursing Workflow Automation</h4>
+                  <p class="text-xs text-mutedGrey mt-0.5 leading-relaxed">
+                    Eliminating administrative friction and repetitive documentation with automated n8n pipelines.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Feature Row 3 -->
+              <div class="flex items-start gap-4 p-3.5 rounded-2xl bg-[#0F172A]/70 border border-white/[0.06] hover:border-blue-500/30 transition-all">
+                <div class="w-11 h-11 rounded-xl bg-blue-600/15 border border-blue-500/20 text-blue-400 flex items-center justify-center text-lg shrink-0">
+                  <i class="fa-solid fa-film"></i>
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold text-white leading-snug">Programmatic & AI Video Creation</h4>
+                  <p class="text-xs text-mutedGrey mt-0.5 leading-relaxed">
+                    Developing code-driven Remotion videos, MCQ explainers, and animated medical concepts at scale.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Feature Row 4 -->
+              <div class="flex items-start gap-4 p-3.5 rounded-2xl bg-[#0F172A]/70 border border-white/[0.06] hover:border-blue-500/30 transition-all">
+                <div class="w-11 h-11 rounded-xl bg-blue-600/15 border border-blue-500/20 text-blue-400 flex items-center justify-center text-lg shrink-0">
+                  <i class="fa-solid fa-robot"></i>
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold text-white leading-snug">Custom AI Nursing Assistants & Support</h4>
+                  <p class="text-xs text-mutedGrey mt-0.5 leading-relaxed">
+                    Deploying tailored study bots, examination preparation assistants, and data summarization systems.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Bottom Mini-Stats Bar: 3 Mini Stats -->
+        <div class="mt-14 pt-8 border-t border-white/[0.08]">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+            
+            <div class="p-4 rounded-xl bg-[#0F172A]/80 border border-white/[0.06]">
+              <div class="text-2xl sm:text-3xl font-extrabold text-white font-mono"><span class="count-up-number" data-target="5">0</span>+</div>
+              <div class="text-xs font-semibold text-mutedGrey uppercase tracking-wider mt-1">Years Experience</div>
+            </div>
+
+            <div class="p-4 rounded-xl bg-[#0F172A]/80 border border-white/[0.06]">
+              <div class="text-2xl sm:text-3xl font-extrabold text-accentCyan font-mono"><span class="count-up-number" data-target="10">0</span>+</div>
+              <div class="text-xs font-semibold text-mutedGrey uppercase tracking-wider mt-1">Projects Completed</div>
+            </div>
+
+            <div class="p-4 rounded-xl bg-[#0F172A]/80 border border-white/[0.06]">
+              <div class="text-2xl sm:text-3xl font-extrabold text-accentGreen font-mono"><span class="count-up-number" data-target="10">0</span>+</div>
+              <div class="text-xs font-semibold text-mutedGrey uppercase tracking-wider mt-1">Happy Clients</div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    
+
+    <!-- Section 3: #services (Services Section - 4x2 Grid on Desktop) -->
+    <section id="services" class="section-bg-main section-padding border-b border-borderLight relative">
+      <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="max-w-3xl mb-16 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0F172A] border border-white/10 text-xs font-bold uppercase tracking-widest text-accentCyan mb-3">
+            WHAT I DO
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+            Problems I Solve, Not Just Services I Offer
+          </h2>
+          <p class="mt-3 text-sm sm:text-base text-mutedGrey max-w-2xl leading-relaxed">
+            I fix specific operational and educational bottlenecks holding healthcare teams and students back, with a clear system and process.
+          </p>
+        </div>
+
+        <!-- 8 Services 4x2 Grid (Desktop 4 cols, Tablet 2 cols, Mobile 1 col) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Card 1: Nursing Workflow Automation -->
+          <div class="ds-card p-6 bg-[#0F172A] border border-white/[0.08] rounded-[18px] flex flex-col justify-between hover:-translate-y-1.5 hover:border-blue-500/40 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300 group">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-blue-500/15 border border-blue-500/20 text-blue-400 flex items-center justify-center text-xl mb-5 group-hover:scale-105 transition-transform">
+                <i class="fa-solid fa-arrows-spin"></i>
+              </div>
+              <h3 class="text-lg font-bold text-white mb-2 leading-snug">Nursing Workflow Automation</h3>
+              <p class="text-xs sm:text-sm text-bodyGrey leading-relaxed mb-5">
+                Automate repetitive nursing and healthcare administrative tasks to improve workflow efficiency, reduce paperwork, and support better healthcare management.
+              </p>
+              <ul class="space-y-2.5 text-xs text-mutedGrey border-t border-white/[0.06] pt-4 mb-6">
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-check text-accentGreen text-sm mt-0.5 shrink-0"></i>
+                  <span>Automated nursing documentation workflows</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-check text-accentGreen text-sm mt-0.5 shrink-0"></i>
+                  <span>Patient appointment &amp; follow-up reminders</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-check text-accentGreen text-sm mt-0.5 shrink-0"></i>
+                  <span>Hospital reporting and administrative automation</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-check text-accentGreen text-sm mt-0.5 shrink-0"></i>
+                  <span>Reduced paperwork &amp; improved workflow efficiency</span>
+                </li>
+              </ul>
+            </div>
+            <a href="#contact" class="inline-flex items-center gap-1.5 text-xs font-bold text-accentCyan hover:text-white transition-colors group-hover:translate-x-1">
+              <span>Learn More</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+
+          <!-- Card 2: AI Healthcare Educational Videos -->
+          <div class="ds-card p-6 bg-[#0F172A] border border-white/[0.08] rounded-[18px] flex flex-col justify-between hover:-translate-y-1.5 hover:border-teal-500/40 hover:shadow-xl hover:shadow-teal-500/10 transition-all duration-300 group">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-teal-500/15 border border-teal-500/20 text-teal-400 flex items-center justify-center text-xl mb-5 group-hover:scale-105 transition-transform">
+                <i class="fa-solid fa-video"></i>
+              </div>
+              <h3 class="text-lg font-bold text-white mb-2 leading-snug">AI Healthcare Educational Videos</h3>
+              <p class="text-xs sm:text-sm text-bodyGrey leading-relaxed mb-5">
+                Create engaging, professional healthcare and nursing educational videos using advanced AI video technology.
+              </p>
+              <ul class="space-y-2.5 text-xs text-mutedGrey border-t border-white/[0.06] pt-4 mb-6">
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-check text-accentGreen text-sm mt-0.5 shrink-0"></i>
+                  <span>AI-generated nursing educational scripts</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-check text-accentGreen text-sm mt-0.5 shrink-0"></i>
+                  <span>AI voiceovers and healthcare animations</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-check text-accentGreen text-sm mt-0.5 shrink-0"></i>
+                  <span>Patient awareness and health promotion videos</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-check text-accentGreen text-sm mt-0.5 shrink-0"></i>
+                  <span>Engaging, professional nursing educational videos</span>
+                </li>
+              </ul>
+            </div>
+            <a href="#contact" class="inline-flex items-center gap-1.5 text-xs font-bold text-accentCyan hover:text-white transition-colors group-hover:translate-x-1">
+              <span>Learn More</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+
+          <!-- Card 3: Programmatic Nursing Videos with Remotion -->
+          <div class="ds-card p-6 bg-[#0F172A] border border-white/[0.08] rounded-[18px] flex flex-col justify-between hover:-translate-y-1.5 hover:border-purple-500/40 hover:shadow-xl hover:shadow-purple-500/10 transition-all duration-300 group">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-purple-500/15 border border-purple-500/20 text-purple-400 flex items-center justify-center text-xl mb-5 group-hover:scale-105 transition-transform">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <h3 class="text-lg font-bold text-white mb-2 leading-snug">Programmatic Nursing Videos with Remotion</h3>
+              <p class="text-xs sm:text-sm text-bodyGrey leading-relaxed mb-5">
+                Develop dynamic, data-driven nursing education videos for large-scale learning, training, and healthcare awareness campaigns.
+              </p>
+              <ul class="space-y-2.5 text-xs text-mutedGrey border-t border-white/[0.06] pt-4 mb-6">
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-check text-accentGreen text-sm mt-0.5 shrink-0"></i>
+                  <span>Automated nursing lesson video generation</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-check text-accentGreen text-sm mt-0.5 shrink-0"></i>
+                  <span>Dynamic medical concepts and animated diagrams</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-check text-accentGreen text-sm mt-0.5 shrink-0"></i>
+                  <span>Bulk nursing MCQ and educational video production</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-check text-accentGreen text-sm mt-0.5 shrink-0"></i>
+                  <span>Data-driven large-scale learning &amp; training videos</span>
+                </li>
+              </ul>
+            </div>
+            <a href="#contact" class="inline-flex items-center gap-1.5 text-xs font-bold text-accentCyan hover:text-white transition-colors group-hover:translate-x-1">
+              <span>Learn More</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+
+          <!-- Card 4: Studio-Grade AI Healthcare Image Generation -->
+          <div class="ds-card p-6 bg-[#0F172A] border border-white/[0.08] rounded-[18px] flex flex-col justify-between hover:-translate-y-1.5 hover:border-indigo-500/40 hover:shadow-xl hover:shadow-indigo-500/10 transition-all duration-300 group">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-indigo-500/15 border border-indigo-500/20 text-indigo-400 flex items-center justify-center text-xl mb-5 group-hover:scale-105 transition-transform">
+                <i class="fa-solid fa-palette"></i>
+              </div>
+              <h3 class="text-lg font-bold text-white mb-2 leading-snug">Studio-Grade AI Healthcare Image Generation</h3>
+              <p class="text-xs sm:text-sm text-bodyGrey leading-relaxed mb-5">
+                Create professional healthcare visuals, nursing educational graphics, and medical awareness designs using AI-powered image generation.
+              </p>
+              <ul class="space-y-2.5 text-xs text-mutedGrey border-t border-white/[0.06] pt-4 mb-6">
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-check text-accentGreen text-sm mt-0.5 shrink-0"></i>
+                  <span>Nursing and healthcare educational illustrations</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-check text-accentGreen text-sm mt-0.5 shrink-0"></i>
+                  <span>Medical awareness posters and infographics</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-check text-accentGreen text-sm mt-0.5 shrink-0"></i>
+                  <span>Professional nursing social media thumbnails</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-check text-accentGreen text-sm mt-0.5 shrink-0"></i>
+                  <span>Studio-grade AI-powered healthcare visuals</span>
+                </li>
+              </ul>
+            </div>
+            <a href="#contact" class="inline-flex items-center gap-1.5 text-xs font-bold text-accentCyan hover:text-white transition-colors group-hover:translate-x-1">
+              <span>Learn More</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+
+          <!-- Card 5: AI-Powered Healthcare Decision Support -->
+          <div class="ds-card p-6 bg-[#0F172A] border border-white/[0.08] rounded-[18px] flex flex-col justify-between hover:-translate-y-1.5 hover:border-emerald-500/40 hover:shadow-xl hover:shadow-emerald-500/10 transition-all duration-300 group">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-emerald-500/15 border border-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl mb-5 group-hover:scale-105 transition-transform">
+                <i class="fa-solid fa-chart-line"></i>
+              </div>
+              <h3 class="text-lg font-bold text-white mb-2 leading-snug">AI-Powered Healthcare Decision Support</h3>
+              <p class="text-xs sm:text-sm text-bodyGrey leading-relaxed mb-5">
+                Transform healthcare-related data into meaningful insights to support informed clinical education and healthcare management decisions.
+              </p>
+              <ul class="space-y-2.5 text-xs text-mutedGrey border-t border-white/[0.06] pt-4 mb-6">
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-check text-accentGreen text-sm mt-0.5 shrink-0"></i>
+                  <span>AI-assisted healthcare data summarization</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-check text-accentGreen text-sm mt-0.5 shrink-0"></i>
+                  <span>Nursing performance and KPI reporting</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-check text-accentGreen text-sm mt-0.5 shrink-0"></i>
+                  <span>Healthcare trends and research analysis</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-check text-accentGreen text-sm mt-0.5 shrink-0"></i>
+                  <span>Clinical decisions must always be verified by qualified healthcare professionals.</span>
+                </li>
+              </ul>
+            </div>
+            <a href="#contact" class="inline-flex items-center gap-1.5 text-xs font-bold text-accentCyan hover:text-white transition-colors group-hover:translate-x-1">
+              <span>Learn More</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+
+          <!-- Card 6: Custom AI Nursing Agents & Assistants -->
+          <div class="ds-card p-6 bg-[#0F172A] border border-white/[0.08] rounded-[18px] flex flex-col justify-between hover:-translate-y-1.5 hover:border-cyan-500/40 hover:shadow-xl hover:shadow-cyan-500/10 transition-all duration-300 group">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-cyan-500/15 border border-cyan-500/20 text-cyan-400 flex items-center justify-center text-xl mb-5 group-hover:scale-105 transition-transform">
+                <i class="fa-solid fa-robot"></i>
+              </div>
+              <h3 class="text-lg font-bold text-white mb-2 leading-snug">Custom AI Nursing Agents & Assistants</h3>
+              <p class="text-xs sm:text-sm text-bodyGrey leading-relaxed mb-5">
+                Develop intelligent AI assistants designed to support nursing students, healthcare educators, and healthcare administrative teams.
+              </p>
+              <ul class="space-y-2.5 text-xs text-mutedGrey border-t border-white/[0.06] pt-4 mb-6">
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-check text-accentGreen text-sm mt-0.5 shrink-0"></i>
+                  <span>AI nursing study assistants</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-check text-accentGreen text-sm mt-0.5 shrink-0"></i>
+                  <span>Nursing MCQ and examination preparation bots</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-check text-accentGreen text-sm mt-0.5 shrink-0"></i>
+                  <span>Healthcare knowledge-base chatbots</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-check text-accentGreen text-sm mt-0.5 shrink-0"></i>
+                  <span>Intelligent assistants for students &amp; educators</span>
+                </li>
+              </ul>
+            </div>
+            <a href="#contact" class="inline-flex items-center gap-1.5 text-xs font-bold text-accentCyan hover:text-white transition-colors group-hover:translate-x-1">
+              <span>Learn More</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+
+          <!-- Card 7: End-to-End Nursing Content Automation -->
+          <div class="ds-card p-6 bg-[#0F172A] border border-white/[0.08] rounded-[18px] flex flex-col justify-between hover:-translate-y-1.5 hover:border-rose-500/40 hover:shadow-xl hover:shadow-rose-500/10 transition-all duration-300 group">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-rose-500/15 border border-rose-500/20 text-rose-400 flex items-center justify-center text-xl mb-5 group-hover:scale-105 transition-transform">
+                <i class="fa-solid fa-pen-nib"></i>
+              </div>
+              <h3 class="text-lg font-bold text-white mb-2 leading-snug">End-to-End Nursing Content Automation</h3>
+              <p class="text-xs sm:text-sm text-bodyGrey leading-relaxed mb-5">
+                Automate nursing educational content creation, from topic research and scriptwriting to visual production and multi-platform publishing.
+              </p>
+              <ul class="space-y-2.5 text-xs text-mutedGrey border-t border-white/[0.06] pt-4 mb-6">
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-check text-accentGreen text-sm mt-0.5 shrink-0"></i>
+                  <span>Automated nursing content calendars</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-check text-accentGreen text-sm mt-0.5 shrink-0"></i>
+                  <span>AI-generated nursing scripts and presentations</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-check text-accentGreen text-sm mt-0.5 shrink-0"></i>
+                  <span>Scheduled healthcare educational content publishing</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-check text-accentGreen text-sm mt-0.5 shrink-0"></i>
+                  <span>Topic research to multi-platform publishing</span>
+                </li>
+              </ul>
+            </div>
+            <a href="#contact" class="inline-flex items-center gap-1.5 text-xs font-bold text-accentCyan hover:text-white transition-colors group-hover:translate-x-1">
+              <span>Learn More</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+
+          <!-- Card 8: AI Strategy & Healthcare Systems Management -->
+          <div class="ds-card p-6 bg-[#0F172A] border border-white/[0.08] rounded-[18px] flex flex-col justify-between hover:-translate-y-1.5 hover:border-amber-500/40 hover:shadow-xl hover:shadow-amber-500/10 transition-all duration-300 group">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-amber-500/15 border border-amber-500/20 text-amber-400 flex items-center justify-center text-xl mb-5 group-hover:scale-105 transition-transform">
+                <i class="fa-solid fa-network-wired"></i>
+              </div>
+              <h3 class="text-lg font-bold text-white mb-2 leading-snug">AI Strategy &amp; Healthcare Systems Management</h3>
+              <p class="text-xs sm:text-sm text-bodyGrey leading-relaxed mb-5">
+                Integrate modern AI technologies into nursing education and healthcare operations to improve productivity, accessibility, and digital transformation.
+              </p>
+              <ul class="space-y-2.5 text-xs text-mutedGrey border-t border-white/[0.06] pt-4 mb-6">
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-check text-accentGreen text-sm mt-0.5 shrink-0"></i>
+                  <span>AI-powered nursing education systems</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-check text-accentGreen text-sm mt-0.5 shrink-0"></i>
+                  <span>Healthcare workflow optimization</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-check text-accentGreen text-sm mt-0.5 shrink-0"></i>
+                  <span>Nursing digital platform setup and management</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-check text-accentGreen text-sm mt-0.5 shrink-0"></i>
+                  <span>Improved productivity, accessibility &amp; digital transformation</span>
+                </li>
+              </ul>
+            </div>
+            <a href="#contact" class="inline-flex items-center gap-1.5 text-xs font-bold text-accentCyan hover:text-white transition-colors group-hover:translate-x-1">
+              <span>Learn More</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section: Tools & Arsenal (One Large Rounded Container - 6x3 Desktop, 3 cols Mobile) -->
+    <section id="tools" class="section-bg-alt section-padding border-b border-borderLight relative">
+      <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="max-w-3xl mb-14 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0F172A] border border-white/10 text-xs font-bold uppercase tracking-widest text-accentCyan mb-3">
+            TECH STACK &amp; CAPABILITIES
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+            My Tools &amp; Arsenal
+          </h2>
+          <p class="mt-3 text-sm sm:text-base text-mutedGrey max-w-2xl leading-relaxed">
+            The tools and platforms I use to build, track, and scale your growth engine.
+          </p>
+        </div>
+
+        <!-- Large Dark Rounded Container -->
+        <div class="bg-[#0F172A] border border-white/[0.08] rounded-[22px] p-6 sm:p-8 lg:p-10 shadow-2xl relative overflow-hidden">
+          
+          <!-- Subtle Inner Ambient Glow -->
+          <div class="absolute -top-24 -right-24 w-72 h-72 bg-blue-600/10 rounded-full blur-3xl pointer-events-none"></div>
+          <div class="absolute -bottom-24 -left-24 w-72 h-72 bg-purple-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+          <!-- 6x3 Grid on Desktop, 3 Columns on Mobile (18 Tools) -->
+          <div class="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-4 relative z-10">
+            
+            <!-- Tool 01 -->
+            <div class="bg-[#0B1220]/90 border border-white/[0.08] rounded-xl p-3 sm:p-4 flex flex-col sm:flex-row items-center gap-2.5 sm:gap-3 text-center sm:text-left hover:border-blue-500/40 hover:bg-[#1E293B]/70 hover:-translate-y-0.5 transition-all group">
+              <div class="w-8 h-8 rounded-lg bg-blue-500/15 text-blue-400 flex items-center justify-center text-sm shrink-0 group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-network-wired"></i>
+              </div>
+              <div class="truncate w-full">
+                <div class="text-xs sm:text-sm font-bold text-white truncate">n8n</div>
+                <div class="text-[10px] text-mutedGrey hidden lg:block truncate">Workflow Automation</div>
+              </div>
+            </div>
+
+            <!-- Tool 02 -->
+            <div class="bg-[#0B1220]/90 border border-white/[0.08] rounded-xl p-3 sm:p-4 flex flex-col sm:flex-row items-center gap-2.5 sm:gap-3 text-center sm:text-left hover:border-purple-500/40 hover:bg-[#1E293B]/70 hover:-translate-y-0.5 transition-all group">
+              <div class="w-8 h-8 rounded-lg bg-purple-500/15 text-purple-400 flex items-center justify-center text-sm shrink-0 group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-video"></i>
+              </div>
+              <div class="truncate w-full">
+                <div class="text-xs sm:text-sm font-bold text-white truncate">Remotion</div>
+                <div class="text-[10px] text-mutedGrey hidden lg:block truncate">Video Generation</div>
+              </div>
+            </div>
+
+            <!-- Tool 03 -->
+            <div class="bg-[#0B1220]/90 border border-white/[0.08] rounded-xl p-3 sm:p-4 flex flex-col sm:flex-row items-center gap-2.5 sm:gap-3 text-center sm:text-left hover:border-teal-500/40 hover:bg-[#1E293B]/70 hover:-translate-y-0.5 transition-all group">
+              <div class="w-8 h-8 rounded-lg bg-teal-500/15 text-teal-400 flex items-center justify-center text-sm shrink-0 group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <div class="truncate w-full">
+                <div class="text-xs sm:text-sm font-bold text-white truncate">OpenAI / GPT</div>
+                <div class="text-[10px] text-mutedGrey hidden lg:block truncate">AI Assistants</div>
+              </div>
+            </div>
+
+            <!-- Tool 04 -->
+            <div class="bg-[#0B1220]/90 border border-white/[0.08] rounded-xl p-3 sm:p-4 flex flex-col sm:flex-row items-center gap-2.5 sm:gap-3 text-center sm:text-left hover:border-indigo-500/40 hover:bg-[#1E293B]/70 hover:-translate-y-0.5 transition-all group">
+              <div class="w-8 h-8 rounded-lg bg-indigo-500/15 text-indigo-400 flex items-center justify-center text-sm shrink-0 group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-microchip"></i>
+              </div>
+              <div class="truncate w-full">
+                <div class="text-xs sm:text-sm font-bold text-white truncate">Claude AI</div>
+                <div class="text-[10px] text-mutedGrey hidden lg:block truncate">Development &amp; Strategy</div>
+              </div>
+            </div>
+
+            <!-- Tool 05 -->
+            <div class="bg-[#0B1220]/90 border border-white/[0.08] rounded-xl p-3 sm:p-4 flex flex-col sm:flex-row items-center gap-2.5 sm:gap-3 text-center sm:text-left hover:border-cyan-500/40 hover:bg-[#1E293B]/70 hover:-translate-y-0.5 transition-all group">
+              <div class="w-8 h-8 rounded-lg bg-cyan-500/15 text-cyan-400 flex items-center justify-center text-sm shrink-0 group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-paintbrush"></i>
+              </div>
+              <div class="truncate w-full">
+                <div class="text-xs sm:text-sm font-bold text-white truncate">Midjourney</div>
+                <div class="text-[10px] text-mutedGrey hidden lg:block truncate">Medical Graphics</div>
+              </div>
+            </div>
+
+            <!-- Tool 06 -->
+            <div class="bg-[#0B1220]/90 border border-white/[0.08] rounded-xl p-3 sm:p-4 flex flex-col sm:flex-row items-center gap-2.5 sm:gap-3 text-center sm:text-left hover:border-emerald-500/40 hover:bg-[#1E293B]/70 hover:-translate-y-0.5 transition-all group">
+              <div class="w-8 h-8 rounded-lg bg-emerald-500/15 text-emerald-400 flex items-center justify-center text-sm shrink-0 group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+              </div>
+              <div class="truncate w-full">
+                <div class="text-xs sm:text-sm font-bold text-white truncate">Flux AI</div>
+                <div class="text-[10px] text-mutedGrey hidden lg:block truncate">Visual Creatives</div>
+              </div>
+            </div>
+
+            <!-- Tool 07 -->
+            <div class="bg-[#0B1220]/90 border border-white/[0.08] rounded-xl p-3 sm:p-4 flex flex-col sm:flex-row items-center gap-2.5 sm:gap-3 text-center sm:text-left hover:border-rose-500/40 hover:bg-[#1E293B]/70 hover:-translate-y-0.5 transition-all group">
+              <div class="w-8 h-8 rounded-lg bg-rose-500/15 text-rose-400 flex items-center justify-center text-sm shrink-0 group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-film"></i>
+              </div>
+              <div class="truncate w-full">
+                <div class="text-xs sm:text-sm font-bold text-white truncate">Runway</div>
+                <div class="text-[10px] text-mutedGrey hidden lg:block truncate">Educational Videos</div>
+              </div>
+            </div>
+
+            <!-- Tool 08 -->
+            <div class="bg-[#0B1220]/90 border border-white/[0.08] rounded-xl p-3 sm:p-4 flex flex-col sm:flex-row items-center gap-2.5 sm:gap-3 text-center sm:text-left hover:border-amber-500/40 hover:bg-[#1E293B]/70 hover:-translate-y-0.5 transition-all group">
+              <div class="w-8 h-8 rounded-lg bg-amber-500/15 text-amber-400 flex items-center justify-center text-sm shrink-0 group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-clapperboard"></i>
+              </div>
+              <div class="truncate w-full">
+                <div class="text-xs sm:text-sm font-bold text-white truncate">Kling AI</div>
+                <div class="text-[10px] text-mutedGrey hidden lg:block truncate">Promotional Video</div>
+              </div>
+            </div>
+
+            <!-- Tool 09 -->
+            <div class="bg-[#0B1220]/90 border border-white/[0.08] rounded-xl p-3 sm:p-4 flex flex-col sm:flex-row items-center gap-2.5 sm:gap-3 text-center sm:text-left hover:border-blue-500/40 hover:bg-[#1E293B]/70 hover:-translate-y-0.5 transition-all group">
+              <div class="w-8 h-8 rounded-lg bg-blue-500/15 text-blue-400 flex items-center justify-center text-sm shrink-0 group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-user-tie"></i>
+              </div>
+              <div class="truncate w-full">
+                <div class="text-xs sm:text-sm font-bold text-white truncate">HeyGen</div>
+                <div class="text-[10px] text-mutedGrey hidden lg:block truncate">AI Presenters</div>
+              </div>
+            </div>
+
+            <!-- Tool 10 -->
+            <div class="bg-[#0B1220]/90 border border-white/[0.08] rounded-xl p-3 sm:p-4 flex flex-col sm:flex-row items-center gap-2.5 sm:gap-3 text-center sm:text-left hover:border-teal-500/40 hover:bg-[#1E293B]/70 hover:-translate-y-0.5 transition-all group">
+              <div class="w-8 h-8 rounded-lg bg-teal-500/15 text-teal-400 flex items-center justify-center text-sm shrink-0 group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-microphone-lines"></i>
+              </div>
+              <div class="truncate w-full">
+                <div class="text-xs sm:text-sm font-bold text-white truncate">ElevenLabs</div>
+                <div class="text-[10px] text-mutedGrey hidden lg:block truncate">Voiceovers</div>
+              </div>
+            </div>
+
+            <!-- Tool 11 -->
+            <div class="bg-[#0B1220]/90 border border-white/[0.08] rounded-xl p-3 sm:p-4 flex flex-col sm:flex-row items-center gap-2.5 sm:gap-3 text-center sm:text-left hover:border-purple-500/40 hover:bg-[#1E293B]/70 hover:-translate-y-0.5 transition-all group">
+              <div class="w-8 h-8 rounded-lg bg-purple-500/15 text-purple-400 flex items-center justify-center text-sm shrink-0 group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-diagram-project"></i>
+              </div>
+              <div class="truncate w-full">
+                <div class="text-xs sm:text-sm font-bold text-white truncate">Make</div>
+                <div class="text-[10px] text-mutedGrey hidden lg:block truncate">App Integrations</div>
+              </div>
+            </div>
+
+            <!-- Tool 12 -->
+            <div class="bg-[#0B1220]/90 border border-white/[0.08] rounded-xl p-3 sm:p-4 flex flex-col sm:flex-row items-center gap-2.5 sm:gap-3 text-center sm:text-left hover:border-indigo-500/40 hover:bg-[#1E293B]/70 hover:-translate-y-0.5 transition-all group">
+              <div class="w-8 h-8 rounded-lg bg-indigo-500/15 text-indigo-400 flex items-center justify-center text-sm shrink-0 group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-link"></i>
+              </div>
+              <div class="truncate w-full">
+                <div class="text-xs sm:text-sm font-bold text-white truncate">LangChain</div>
+                <div class="text-[10px] text-mutedGrey hidden lg:block truncate">Knowledge Pipelines</div>
+              </div>
+            </div>
+
+            <!-- Tool 13 -->
+            <div class="bg-[#0B1220]/90 border border-white/[0.08] rounded-xl p-3 sm:p-4 flex flex-col sm:flex-row items-center gap-2.5 sm:gap-3 text-center sm:text-left hover:border-emerald-500/40 hover:bg-[#1E293B]/70 hover:-translate-y-0.5 transition-all group">
+              <div class="w-8 h-8 rounded-lg bg-emerald-500/15 text-emerald-400 flex items-center justify-center text-sm shrink-0 group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-database"></i>
+              </div>
+              <div class="truncate w-full">
+                <div class="text-xs sm:text-sm font-bold text-white truncate">Supabase</div>
+                <div class="text-[10px] text-mutedGrey hidden lg:block truncate">Databases</div>
+              </div>
+            </div>
+
+            <!-- Tool 14 -->
+            <div class="bg-[#0B1220]/90 border border-white/[0.08] rounded-xl p-3 sm:p-4 flex flex-col sm:flex-row items-center gap-2.5 sm:gap-3 text-center sm:text-left hover:border-amber-500/40 hover:bg-[#1E293B]/70 hover:-translate-y-0.5 transition-all group">
+              <div class="w-8 h-8 rounded-lg bg-amber-500/15 text-amber-400 flex items-center justify-center text-sm shrink-0 group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-table-cells"></i>
+              </div>
+              <div class="truncate w-full">
+                <div class="text-xs sm:text-sm font-bold text-white truncate">Airtable</div>
+                <div class="text-[10px] text-mutedGrey hidden lg:block truncate">Question Banks</div>
+              </div>
+            </div>
+
+            <!-- Tool 15 -->
+            <div class="bg-[#0B1220]/90 border border-white/[0.08] rounded-xl p-3 sm:p-4 flex flex-col sm:flex-row items-center gap-2.5 sm:gap-3 text-center sm:text-left hover:border-cyan-500/40 hover:bg-[#1E293B]/70 hover:-translate-y-0.5 transition-all group">
+              <div class="w-8 h-8 rounded-lg bg-cyan-500/15 text-cyan-400 flex items-center justify-center text-sm shrink-0 group-hover:scale-110 transition-transform">
+                <i class="fa-brands fa-react"></i>
+              </div>
+              <div class="truncate w-full">
+                <div class="text-xs sm:text-sm font-bold text-white truncate">React</div>
+                <div class="text-[10px] text-mutedGrey hidden lg:block truncate">Web &amp; Dashboards</div>
+              </div>
+            </div>
+
+            <!-- Tool 16 -->
+            <div class="bg-[#0B1220]/90 border border-white/[0.08] rounded-xl p-3 sm:p-4 flex flex-col sm:flex-row items-center gap-2.5 sm:gap-3 text-center sm:text-left hover:border-green-500/40 hover:bg-[#1E293B]/70 hover:-translate-y-0.5 transition-all group">
+              <div class="w-8 h-8 rounded-lg bg-green-500/15 text-green-400 flex items-center justify-center text-sm shrink-0 group-hover:scale-110 transition-transform">
+                <i class="fa-brands fa-node-js"></i>
+              </div>
+              <div class="truncate w-full">
+                <div class="text-xs sm:text-sm font-bold text-white truncate">Node.js</div>
+                <div class="text-[10px] text-mutedGrey hidden lg:block truncate">APIs &amp; Backend</div>
+              </div>
+            </div>
+
+            <!-- Tool 17 -->
+            <div class="bg-[#0B1220]/90 border border-white/[0.08] rounded-xl p-3 sm:p-4 flex flex-col sm:flex-row items-center gap-2.5 sm:gap-3 text-center sm:text-left hover:border-teal-500/40 hover:bg-[#1E293B]/70 hover:-translate-y-0.5 transition-all group">
+              <div class="w-8 h-8 rounded-lg bg-teal-500/15 text-teal-400 flex items-center justify-center text-sm shrink-0 group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-compass"></i>
+              </div>
+              <div class="truncate w-full">
+                <div class="text-xs sm:text-sm font-bold text-white truncate">Perplexity AI</div>
+                <div class="text-[10px] text-mutedGrey hidden lg:block truncate">Nursing Research</div>
+              </div>
+            </div>
+
+            <!-- Tool 18 -->
+            <div class="bg-[#0B1220]/90 border border-white/[0.08] rounded-xl p-3 sm:p-4 flex flex-col sm:flex-row items-center gap-2.5 sm:gap-3 text-center sm:text-left hover:border-yellow-500/40 hover:bg-[#1E293B]/70 hover:-translate-y-0.5 transition-all group">
+              <div class="w-8 h-8 rounded-lg bg-yellow-500/15 text-yellow-400 flex items-center justify-center text-sm shrink-0 group-hover:scale-110 transition-transform">
+                <i class="fa-brands fa-python"></i>
+              </div>
+              <div class="truncate w-full">
+                <div class="text-xs sm:text-sm font-bold text-white truncate">Python</div>
+                <div class="text-[10px] text-mutedGrey hidden lg:block truncate">Data Analysis &amp; AI</div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    
+
+    <!-- Section 4: #results (Case Studies Section - Single Centred Column) -->
+    <section id="results" class="section-bg-alt section-padding border-b border-borderLight relative">
+      <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="max-w-3xl mb-16 text-center mx-auto">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0F172A] border border-white/10 text-xs font-bold uppercase tracking-widest text-accentCyan mb-3">
+            PROVEN RESULTS
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+            Real Case Studies, Real Growth
+          </h2>
+          <p class="mt-3 text-sm sm:text-base text-mutedGrey max-w-2xl mx-auto leading-relaxed">
+            Explore the real-world healthcare and education problems I solved, the systems built, and the measurable results delivered.
+          </p>
+        </div>
+
+        <!-- 5 Large Case Study Cards Stacked in a Single Centred Column -->
+        <div class="max-w-4xl mx-auto space-y-8 sm:space-y-10">
+          
+          <!-- Case Study 01 -->
+          <div class="ds-card bg-[#0F172A] border border-white/[0.08] rounded-[20px] overflow-hidden hover:-translate-y-1.5 hover:border-blue-500/40 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-300 group">
+            <!-- Image on Top with Overlaid Category Pill -->
+            <div class="aspect-[16/9] sm:aspect-[21/9] w-full overflow-hidden bg-slate-900 relative">
+              <img src="https://images.openai.com/static-rsc-4/G2xdA7RBO_tW13GyAjBiz2cvXAI5U6LHZvaV4RcBjVzghJxfTG1cHobXO1GjHoQTA7Y6ApQROq1nsnTA_pDf1R-1cXWJHUPb0Z93YHlZQAe8wj9lQdtxfMYcuva6st_XBnB-XJw5gFFQySdb67FZQU_J7eCoJHazIuqvONMyVdo?purpose=inline" 
+                   alt="AI-Powered Nursing Messenger Automation" 
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#0F172A] via-[#0F172A]/40 to-transparent"></div>
+              
+              <!-- Category Pill Overlaid on Image -->
+              <div class="absolute top-4 left-4 sm:top-5 sm:left-5 inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-xs font-semibold bg-[#0B1220]/85 backdrop-blur-md border border-white/10 text-accentCyan shadow-md">
+                <i class="fa-solid fa-robot text-[11px]"></i>
+                <span>Healthcare Workflow Automation &amp; AI Agents</span>
+              </div>
+            </div>
+
+            <!-- Card Body -->
+            <div class="p-6 sm:p-8 space-y-4">
+              <h3 class="text-xl sm:text-2xl font-bold text-white leading-snug">
+                AI-Powered Nursing Messenger Automation
+              </h3>
+
+              <!-- One Green Outcome Line with Main Result -->
+              <div class="flex items-center gap-2.5 text-xs sm:text-sm font-semibold text-accentGreen bg-accentGreen/10 border border-accentGreen/20 px-3.5 py-2.5 rounded-xl">
+                <i class="fa-solid fa-arrow-trend-up text-sm shrink-0"></i>
+                <span>Expected Benefits: 24/7 automated responses to common inquiries, automated nursing course inquiry management, and lead capture &amp; student registration support.</span>
+              </div>
+
+              <p class="text-xs sm:text-sm text-bodyGrey leading-relaxed">
+                <strong>Project Overview:</strong> Developed an AI-powered Messenger automation system to answer common healthcare education queries, guide nursing students, capture inquiries, and manage automated responses.
+              </p>
+
+              <!-- 5 Small Tag Pills -->
+              <div class="flex flex-wrap gap-2 pt-1">
+                <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-[#0B1220] border border-white/10 text-mutedGrey">n8n</span>
+                <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-[#0B1220] border border-white/10 text-mutedGrey">OpenAI API</span>
+                <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-[#0B1220] border border-white/10 text-mutedGrey">Messenger API</span>
+                <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-[#0B1220] border border-white/10 text-mutedGrey">Webhooks</span>
+                <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-[#0B1220] border border-white/10 text-mutedGrey">CRM</span>
+              </div>
+
+              <!-- Two Action Buttons linking to PROJECT_LINK -->
+              <div class="pt-4 flex flex-wrap items-center gap-3 border-t border-white/[0.08]">
+                <a href="https://www.prnewswire.com/news-releases/well-health-launches-chatassist-ai-enabling-conversational-ai-between-patients-and-healthcare-providers-301343949.html?utm_source=chatgpt.com" 
+                   target="_blank" rel="noopener noreferrer" 
+                   class="btn-pill-primary text-xs">
+                  <span>View Live</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                </a>
+                <a href="https://www.prnewswire.com/news-releases/well-health-launches-chatassist-ai-enabling-conversational-ai-between-patients-and-healthcare-providers-301343949.html?utm_source=chatgpt.com" 
+                   target="_blank" rel="noopener noreferrer" 
+                   class="btn-pill-secondary text-xs">
+                  <i class="fa-solid fa-file-lines text-xs text-accentCyan"></i>
+                  <span>Read Case Study</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Case Study 02 -->
+          <div class="ds-card bg-[#0F172A] border border-white/[0.08] rounded-[20px] overflow-hidden hover:-translate-y-1.5 hover:border-teal-500/40 hover:shadow-2xl hover:shadow-teal-500/10 transition-all duration-300 group">
+            <!-- Image on Top with Overlaid Category Pill -->
+            <div class="aspect-[16/9] sm:aspect-[21/9] w-full overflow-hidden bg-slate-900 relative">
+              <img src="https://images.openai.com/static-rsc-4/BGnyhf52oy14F_UV7JQsD29FaZt5gMmCYlW0I4z86gHbkMc56e2ycZWTEEexRR4xi-2ak89LNINRr2vj0YSLkSVNsukqu4XpqeWgN_Q81S-CxuO0ebmGIMX72VwjBUSvR-55kcb2j-jq6VFG9U3bvXK5DACRd-mKYQl4b7CVgVA?purpose=inline" 
+                   alt="Automated Nursing Educational Video Generation" 
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#0F172A] via-[#0F172A]/40 to-transparent"></div>
+              
+              <!-- Category Pill Overlaid on Image -->
+              <div class="absolute top-4 left-4 sm:top-5 sm:left-5 inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-xs font-semibold bg-[#0B1220]/85 backdrop-blur-md border border-white/10 text-teal-400 shadow-md">
+                <i class="fa-solid fa-video text-[11px]"></i>
+                <span>Programmatic Media &amp; Video Automation</span>
+              </div>
+            </div>
+
+            <!-- Card Body -->
+            <div class="p-6 sm:p-8 space-y-4">
+              <h3 class="text-xl sm:text-2xl font-bold text-white leading-snug">
+                Automated Nursing Educational Video Generation
+              </h3>
+
+              <!-- One Green Outcome Line with Main Result -->
+              <div class="flex items-center gap-2.5 text-xs sm:text-sm font-semibold text-accentGreen bg-accentGreen/10 border border-accentGreen/20 px-3.5 py-2.5 rounded-xl">
+                <i class="fa-solid fa-arrow-trend-up text-sm shrink-0"></i>
+                <span>Expected Benefits: Automated nursing lesson video production, dynamic MCQ explanation videos, and scalable educational content creation.</span>
+              </div>
+
+              <p class="text-xs sm:text-sm text-bodyGrey leading-relaxed">
+                <strong>Project Overview:</strong> Designed a code-based video generation workflow to produce nursing lessons, animated medical concepts, MCQ explanations, and educational content at scale.
+              </p>
+
+              <!-- 5 Small Tag Pills -->
+              <div class="flex flex-wrap gap-2 pt-1">
+                <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-[#0B1220] border border-white/10 text-mutedGrey">Remotion</span>
+                <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-[#0B1220] border border-white/10 text-mutedGrey">React</span>
+                <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-[#0B1220] border border-white/10 text-mutedGrey">TypeScript</span>
+                <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-[#0B1220] border border-white/10 text-mutedGrey">FFmpeg</span>
+                <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-[#0B1220] border border-white/10 text-mutedGrey">n8n</span>
+              </div>
+
+              <!-- Two Action Buttons linking to PROJECT_LINK -->
+              <div class="pt-4 flex flex-wrap items-center gap-3 border-t border-white/[0.08]">
+                <a href="https://www.linkedin.com/pulse/how-create-medical-animations-healthcare-animation-production-boa-idj3e?utm_source=chatgpt.com" 
+                   target="_blank" rel="noopener noreferrer" 
+                   class="btn-pill-primary text-xs">
+                  <span>View Live</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                </a>
+                <a href="https://www.linkedin.com/pulse/how-create-medical-animations-healthcare-animation-production-boa-idj3e?utm_source=chatgpt.com" 
+                   target="_blank" rel="noopener noreferrer" 
+                   class="btn-pill-secondary text-xs">
+                  <i class="fa-solid fa-file-lines text-xs text-accentCyan"></i>
+                  <span>Read Case Study</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Case Study 03 -->
+          <div class="ds-card bg-[#0F172A] border border-white/[0.08] rounded-[20px] overflow-hidden hover:-translate-y-1.5 hover:border-purple-500/40 hover:shadow-2xl hover:shadow-purple-500/10 transition-all duration-300 group">
+            <!-- Image on Top with Overlaid Category Pill -->
+            <div class="aspect-[16/9] sm:aspect-[21/9] w-full overflow-hidden bg-slate-900 relative">
+              <img src="https://images.openai.com/static-rsc-4/79rq-88OxIyRZ-ebkZYZjR24ELU89yfRl8rgmwX4RmQ_g-DfWIYRgZQHb6IgbLmOytacFzDU3DAoQX2xhvSz6aj8HHIg--zaKL_fdgc9tdDV_djZACBT4E0pt2xMlRPoTXfgVpRQyeq_B23qSVl9eP1BMYReBdba4BGDifhV0G8?purpose=inline" 
+                   alt="AI-Powered Healthcare Decision Support System" 
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#0F172A] via-[#0F172A]/40 to-transparent"></div>
+              
+              <!-- Category Pill Overlaid on Image -->
+              <div class="absolute top-4 left-4 sm:top-5 sm:left-5 inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-xs font-semibold bg-[#0B1220]/85 backdrop-blur-md border border-white/10 text-purple-400 shadow-md">
+                <i class="fa-solid fa-chart-line text-[11px]"></i>
+                <span>Healthcare Analytics &amp; AI Strategy</span>
+              </div>
+            </div>
+
+            <!-- Card Body -->
+            <div class="p-6 sm:p-8 space-y-4">
+              <h3 class="text-xl sm:text-2xl font-bold text-white leading-snug">
+                AI-Powered Healthcare Decision Support System
+              </h3>
+
+              <!-- One Green Outcome Line with Main Result -->
+              <div class="flex items-center gap-2.5 text-xs sm:text-sm font-semibold text-accentGreen bg-accentGreen/10 border border-accentGreen/20 px-3.5 py-2.5 rounded-xl">
+                <i class="fa-solid fa-arrow-trend-up text-sm shrink-0"></i>
+                <span>Expected Benefits: Automated healthcare data summaries, nursing performance reporting, and healthcare research &amp; trend analysis.</span>
+              </div>
+
+              <p class="text-xs sm:text-sm text-bodyGrey leading-relaxed">
+                <strong>Project Overview:</strong> Designed an AI-assisted reporting concept that organizes healthcare-related information and transforms structured data into useful summaries for healthcare education and administrative planning.
+              </p>
+
+              <!-- 5 Small Tag Pills -->
+              <div class="flex flex-wrap gap-2 pt-1">
+                <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-[#0B1220] border border-white/10 text-mutedGrey">OpenAI</span>
+                <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-[#0B1220] border border-white/10 text-mutedGrey">Claude AI</span>
+                <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-[#0B1220] border border-white/10 text-mutedGrey">Perplexity AI</span>
+                <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-[#0B1220] border border-white/10 text-mutedGrey">Airtable</span>
+                <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-[#0B1220] border border-white/10 text-mutedGrey">n8n</span>
+              </div>
+
+              <!-- Two Action Buttons linking to PROJECT_LINK -->
+              <div class="pt-4 flex flex-wrap items-center gap-3 border-t border-white/[0.08]">
+                <a href="https://murmusoftwareinfotech.com/blog/ai-healthcare-analytics-dashboard?utm_source=chatgpt.com" 
+                   target="_blank" rel="noopener noreferrer" 
+                   class="btn-pill-primary text-xs">
+                  <span>View Live</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                </a>
+                <a href="https://murmusoftwareinfotech.com/blog/ai-healthcare-analytics-dashboard?utm_source=chatgpt.com" 
+                   target="_blank" rel="noopener noreferrer" 
+                   class="btn-pill-secondary text-xs">
+                  <i class="fa-solid fa-file-lines text-xs text-accentCyan"></i>
+                  <span>Read Case Study</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Case Study 04 -->
+          <div class="ds-card bg-[#0F172A] border border-white/[0.08] rounded-[20px] overflow-hidden hover:-translate-y-1.5 hover:border-indigo-500/40 hover:shadow-2xl hover:shadow-indigo-500/10 transition-all duration-300 group">
+            <!-- Image on Top with Overlaid Category Pill -->
+            <div class="aspect-[16/9] sm:aspect-[21/9] w-full overflow-hidden bg-slate-900 relative">
+              <img src="https://images.openai.com/static-rsc-4/_MhN2cNCizApKxNA1lB-XcWhLb78sNYLOHD6cJrV4XxYhghRIxUq-IZ6o0KOdf5Ut4uhXc44zjcWNTNPWijwLakKj16NF7qMWJATEcSRxp0MzMwofp3ALtTPkkobXGj5uoh7ZRDrFmE94tyG6q4iN2_bAm-aEC8f4Ac2wOr_Ehc?purpose=inline" 
+                   alt="AI-Accelerated Nursing Education Website" 
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#0F172A] via-[#0F172A]/40 to-transparent"></div>
+              
+              <!-- Category Pill Overlaid on Image -->
+              <div class="absolute top-4 left-4 sm:top-5 sm:left-5 inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-xs font-semibold bg-[#0B1220]/85 backdrop-blur-md border border-white/10 text-indigo-400 shadow-md">
+                <i class="fa-solid fa-globe text-[11px]"></i>
+                <span>Web Development &amp; AI Integration</span>
+              </div>
+            </div>
+
+            <!-- Card Body -->
+            <div class="p-6 sm:p-8 space-y-4">
+              <h3 class="text-xl sm:text-2xl font-bold text-white leading-snug">
+                AI-Accelerated Nursing Education Website
+              </h3>
+
+              <!-- One Green Outcome Line with Main Result -->
+              <div class="flex items-center gap-2.5 text-xs sm:text-sm font-semibold text-accentGreen bg-accentGreen/10 border border-accentGreen/20 px-3.5 py-2.5 rounded-xl">
+                <i class="fa-solid fa-arrow-trend-up text-sm shrink-0"></i>
+                <span>Expected Benefits: Online nursing learning resources, interactive nursing MCQ examinations, AI-powered educational assistance, and responsive student dashboard.</span>
+              </div>
+
+              <p class="text-xs sm:text-sm text-bodyGrey leading-relaxed">
+                <strong>Project Overview:</strong> Developed a concept for a responsive digital learning platform featuring nursing educational resources, online model tests, AI learning assistance, and student engagement features.
+              </p>
+
+              <!-- 5 Small Tag Pills -->
+              <div class="flex flex-wrap gap-2 pt-1">
+                <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-[#0B1220] border border-white/10 text-mutedGrey">React</span>
+                <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-[#0B1220] border border-white/10 text-mutedGrey">Next.js</span>
+                <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-[#0B1220] border border-white/10 text-mutedGrey">Tailwind CSS</span>
+                <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-[#0B1220] border border-white/10 text-mutedGrey">AI Agents</span>
+                <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-[#0B1220] border border-white/10 text-mutedGrey">SEO</span>
+              </div>
+
+              <!-- Two Action Buttons linking to PROJECT_LINK -->
+              <div class="pt-4 flex flex-wrap items-center gap-3 border-t border-white/[0.08]">
+                <a href="https://www.cleveroad.com/code-audit-services/?utm_source=chatgpt.com" 
+                   target="_blank" rel="noopener noreferrer" 
+                   class="btn-pill-primary text-xs">
+                  <span>View Live</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                </a>
+                <a href="https://www.cleveroad.com/code-audit-services/?utm_source=chatgpt.com" 
+                   target="_blank" rel="noopener noreferrer" 
+                   class="btn-pill-secondary text-xs">
+                  <i class="fa-solid fa-file-lines text-xs text-accentCyan"></i>
+                  <span>Read Case Study</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Case Study 05 -->
+          <div class="ds-card bg-[#0F172A] border border-white/[0.08] rounded-[20px] overflow-hidden hover:-translate-y-1.5 hover:border-rose-500/40 hover:shadow-2xl hover:shadow-rose-500/10 transition-all duration-300 group">
+            <!-- Image on Top with Overlaid Category Pill -->
+            <div class="aspect-[16/9] sm:aspect-[21/9] w-full overflow-hidden bg-slate-900 relative">
+              <img src="https://images.openai.com/static-rsc-4/-HkEegeX9i6_LXu6NPDJe77ryVqm3t72PpeVqTRjrcLMdoecWb3IPKBvFX5B3OPPrOfTXSMlycmLD_GY6reex2Pv8DVqJw_3JiDvP8n5b9rDHwVpJxM-Dgz0d0Qk0QaTPgkDlbHRw9SUJbyI2Q1E9hOwtslJwEjkZH-eDnBhWPs?purpose=inline" 
+                   alt="Automated Nursing Education Email System" 
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#0F172A] via-[#0F172A]/40 to-transparent"></div>
+              
+              <!-- Category Pill Overlaid on Image -->
+              <div class="absolute top-4 left-4 sm:top-5 sm:left-5 inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-xs font-semibold bg-[#0B1220]/85 backdrop-blur-md border border-white/10 text-rose-400 shadow-md">
+                <i class="fa-solid fa-envelope text-[11px]"></i>
+                <span>Email Marketing &amp; Automation</span>
+              </div>
+            </div>
+
+            <!-- Card Body -->
+            <div class="p-6 sm:p-8 space-y-4">
+              <h3 class="text-xl sm:text-2xl font-bold text-white leading-snug">
+                Automated Nursing Education Email System
+              </h3>
+
+              <!-- One Green Outcome Line with Main Result -->
+              <div class="flex items-center gap-2.5 text-xs sm:text-sm font-semibold text-accentGreen bg-accentGreen/10 border border-accentGreen/20 px-3.5 py-2.5 rounded-xl">
+                <i class="fa-solid fa-arrow-trend-up text-sm shrink-0"></i>
+                <span>Expected Benefits: Automated student notifications, personalized educational email sequences, course &amp; exam updates, and improved student communication.</span>
+              </div>
+
+              <p class="text-xs sm:text-sm text-bodyGrey leading-relaxed">
+                <strong>Project Overview:</strong> Created an automated communication concept for nursing education platforms to deliver course announcements, examination reminders, learning materials, and student updates.
+              </p>
+
+              <!-- 5 Small Tag Pills -->
+              <div class="flex flex-wrap gap-2 pt-1">
+                <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-[#0B1220] border border-white/10 text-mutedGrey">HTML/CSS</span>
+                <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-[#0B1220] border border-white/10 text-mutedGrey">n8n</span>
+                <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-[#0B1220] border border-white/10 text-mutedGrey">OpenAI</span>
+                <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-[#0B1220] border border-white/10 text-mutedGrey">Email Automation</span>
+                <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-[#0B1220] border border-white/10 text-mutedGrey">Copywriting</span>
+              </div>
+
+              <!-- Two Action Buttons linking to PROJECT_LINK -->
+              <div class="pt-4 flex flex-wrap items-center gap-3 border-t border-white/[0.08]">
+                <a href="https://crmx.uk/products/healthcare-wellness-email-template-bundle-10-responsive-html-templates-for-clinics-dentists-therapists-hospitals-medical-practices?utm_source=chatgpt.com" 
+                   target="_blank" rel="noopener noreferrer" 
+                   class="btn-pill-primary text-xs">
+                  <span>View Live</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                </a>
+                <a href="https://crmx.uk/products/healthcare-wellness-email-template-bundle-10-responsive-html-templates-for-clinics-dentists-therapists-hospitals-medical-practices?utm_source=chatgpt.com" 
+                   target="_blank" rel="noopener noreferrer" 
+                   class="btn-pill-secondary text-xs">
+                  <i class="fa-solid fa-file-lines text-xs text-accentCyan"></i>
+                  <span>Read Case Study</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Full-Width Stats Band (4 Columns with Count-Up Numbers) -->
+    <section id="stats-band" class="bg-[#0B1220] py-16 sm:py-20 border-b border-borderLight relative overflow-hidden">
+      <!-- Subtle Background Ambient Glow -->
+      <div class="absolute inset-0 bg-gradient-to-r from-blue-600/5 via-purple-600/5 to-cyan-600/5 pointer-events-none"></div>
+
+      <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-white/[0.08]">
+          
+          <!-- Stat 1: 5+ Years of Experience -->
+          <div class="pt-6 md:pt-0 px-2 sm:px-4">
+            <div class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white font-mono tracking-tight">
+              <span class="count-up-number" data-target="5">0</span><span>+</span>
+            </div>
+            <div class="mt-2 text-xs sm:text-sm font-semibold uppercase tracking-wider text-mutedGrey">
+              Years of Experience
+            </div>
+          </div>
+
+          <!-- Stat 2: 10+ Projects Completed -->
+          <div class="pt-6 md:pt-0 px-2 sm:px-4">
+            <div class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white font-mono tracking-tight">
+              <span class="count-up-number" data-target="10">0</span><span>+</span>
+            </div>
+            <div class="mt-2 text-xs sm:text-sm font-semibold uppercase tracking-wider text-mutedGrey">
+              Projects Completed
+            </div>
+          </div>
+
+          <!-- Stat 3: 10+ Happy Clients -->
+          <div class="pt-6 md:pt-0 px-2 sm:px-4">
+            <div class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white font-mono tracking-tight">
+              <span class="count-up-number" data-target="10">0</span><span>+</span>
+            </div>
+            <div class="mt-2 text-xs sm:text-sm font-semibold uppercase tracking-wider text-mutedGrey">
+              Happy Clients
+            </div>
+          </div>
+
+          <!-- Stat 4: 18+ AI Tools & Technologies -->
+          <div class="pt-6 md:pt-0 px-2 sm:px-4">
+            <div class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white font-mono tracking-tight">
+              <span class="count-up-number" data-target="18">0</span><span>+</span>
+            </div>
+            <div class="mt-2 text-xs sm:text-sm font-semibold uppercase tracking-wider text-mutedGrey">
+              AI Tools & Technologies
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Testimonials (2x2 Grid on Desktop, 1 Column on Mobile) -->
+    <section id="testimonials" class="section-bg-alt section-padding border-b border-borderLight relative">
+      <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="max-w-3xl mb-16 text-center mx-auto">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0F172A] border border-white/10 text-xs font-bold uppercase tracking-widest text-accentCyan mb-3">
+            CLIENT LOVE
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+            What Clients Say About Working With Me
+          </h2>
+          <p class="mt-3 text-sm sm:text-base text-mutedGrey max-w-2xl mx-auto leading-relaxed">
+            Real feedback from real business owners I've helped scale.
+          </p>
+        </div>
+
+        <!-- 4 Testimonials 2x2 Grid on Desktop, 1 Column on Mobile -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+          
+          <!-- Testimonial 1: Dr. Sarah Ahmed -->
+          <div class="ds-card bg-[#0F172A] border border-white/[0.08] rounded-[20px] p-6 sm:p-8 flex flex-col justify-between hover:-translate-y-1.5 hover:border-blue-500/30 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300">
+            <div>
+              <!-- 5 Gold Stars on Top -->
+              <div class="flex items-center gap-1.5 text-accentGold text-sm mb-4">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <!-- Quote -->
+              <p class="text-bodyGrey italic text-sm sm:text-base leading-relaxed mb-6">
+                "Nurse Abu Raihan demonstrates an innovative approach to nursing education by combining healthcare knowledge with modern AI technology. His educational concepts make learning more engaging and accessible."
+              </p>
+            </div>
+            <!-- Client Meta: Circular Avatar with Initials, Name, Role & Green Verified Checkmark -->
+            <div class="pt-4 border-t border-white/[0.06] flex items-center gap-3.5">
+              <div class="w-11 h-11 rounded-full bg-gradient-to-tr from-[#2563EB] to-[#7C3AED] flex items-center justify-center text-white font-bold text-sm shadow-md shrink-0">
+                SA
+              </div>
+              <div>
+                <div class="flex items-center gap-1.5">
+                  <h4 class="font-bold text-sm sm:text-base text-white">Dr. Sarah Ahmed</h4>
+                  <i class="fa-solid fa-circle-check text-accentGreen text-xs" title="Verified Client"></i>
+                </div>
+                <p class="text-xs text-mutedGrey mt-0.5">Nursing Educator</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2: Nusrat Jahan -->
+          <div class="ds-card bg-[#0F172A] border border-white/[0.08] rounded-[20px] p-6 sm:p-8 flex flex-col justify-between hover:-translate-y-1.5 hover:border-teal-500/30 hover:shadow-xl hover:shadow-teal-500/10 transition-all duration-300">
+            <div>
+              <!-- 5 Gold Stars on Top -->
+              <div class="flex items-center gap-1.5 text-accentGold text-sm mb-4">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <!-- Quote -->
+              <p class="text-bodyGrey italic text-sm sm:text-base leading-relaxed mb-6">
+                "The AI-powered nursing learning resources and educational content are helpful and easy to understand. His work brings a new dimension to digital nursing education."
+              </p>
+            </div>
+            <!-- Client Meta -->
+            <div class="pt-4 border-t border-white/[0.06] flex items-center gap-3.5">
+              <div class="w-11 h-11 rounded-full bg-gradient-to-tr from-[#0D9488] to-[#22D3EE] flex items-center justify-center text-white font-bold text-sm shadow-md shrink-0">
+                NJ
+              </div>
+              <div>
+                <div class="flex items-center gap-1.5">
+                  <h4 class="font-bold text-sm sm:text-base text-white">Nusrat Jahan</h4>
+                  <i class="fa-solid fa-circle-check text-accentGreen text-xs" title="Verified Client"></i>
+                </div>
+                <p class="text-xs text-mutedGrey mt-0.5">Nursing Student</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3: Md. Tanvir Hasan -->
+          <div class="ds-card bg-[#0F172A] border border-white/[0.08] rounded-[20px] p-6 sm:p-8 flex flex-col justify-between hover:-translate-y-1.5 hover:border-purple-500/30 hover:shadow-xl hover:shadow-purple-500/10 transition-all duration-300">
+            <div>
+              <!-- 5 Gold Stars on Top -->
+              <div class="flex items-center gap-1.5 text-accentGold text-sm mb-4">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <!-- Quote -->
+              <p class="text-bodyGrey italic text-sm sm:text-base leading-relaxed mb-6">
+                "His vision of integrating artificial intelligence with healthcare education is impressive. His focus on digital innovation and automation offers exciting opportunities for modern healthcare."
+              </p>
+            </div>
+            <!-- Client Meta -->
+            <div class="pt-4 border-t border-white/[0.06] flex items-center gap-3.5">
+              <div class="w-11 h-11 rounded-full bg-gradient-to-tr from-[#7C3AED] to-[#EAB308] flex items-center justify-center text-white font-bold text-sm shadow-md shrink-0">
+                TH
+              </div>
+              <div>
+                <div class="flex items-center gap-1.5">
+                  <h4 class="font-bold text-sm sm:text-base text-white">Md. Tanvir Hasan</h4>
+                  <i class="fa-solid fa-circle-check text-accentGreen text-xs" title="Verified Client"></i>
+                </div>
+                <p class="text-xs text-mutedGrey mt-0.5">Healthcare Professional</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 4: Fahim Rahman -->
+          <div class="ds-card bg-[#0F172A] border border-white/[0.08] rounded-[20px] p-6 sm:p-8 flex flex-col justify-between hover:-translate-y-1.5 hover:border-indigo-500/30 hover:shadow-xl hover:shadow-indigo-500/10 transition-all duration-300">
+            <div>
+              <!-- 5 Gold Stars on Top -->
+              <div class="flex items-center gap-1.5 text-accentGold text-sm mb-4">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <!-- Quote -->
+              <p class="text-bodyGrey italic text-sm sm:text-base leading-relaxed mb-6">
+                "Nurse Abu Raihan has a strong interest in AI-powered education, automation, and digital solutions. His dedication to developing smarter learning experiences is commendable."
+              </p>
+            </div>
+            <!-- Client Meta -->
+            <div class="pt-4 border-t border-white/[0.06] flex items-center gap-3.5">
+              <div class="w-11 h-11 rounded-full bg-gradient-to-tr from-[#2563EB] to-[#22D3EE] flex items-center justify-center text-white font-bold text-sm shadow-md shrink-0">
+                FR
+              </div>
+              <div>
+                <div class="flex items-center gap-1.5">
+                  <h4 class="font-bold text-sm sm:text-base text-white">Fahim Rahman</h4>
+                  <i class="fa-solid fa-circle-check text-accentGreen text-xs" title="Verified Client"></i>
+                </div>
+                <p class="text-xs text-mutedGrey mt-0.5">Digital Learning Specialist</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section: FAQ (Centred Single Column Accordion) -->
+    <section id="faq" class="section-bg-main section-padding border-b border-borderLight relative">
+      <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="max-w-3xl mb-14 text-center mx-auto">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0F172A] border border-white/10 text-xs font-bold uppercase tracking-widest text-accentCyan mb-3">
+            QUESTIONS & ANSWERS
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+            Frequently Asked Questions
+          </h2>
+          <p class="mt-3 text-sm sm:text-base text-mutedGrey max-w-2xl mx-auto leading-relaxed">
+            Everything you need to know before we start working together.
+          </p>
+        </div>
+
+        <!-- 4 Accordion Items Centred in a Single Column -->
+        <div class="max-w-3xl mx-auto space-y-4" id="faq-accordion-group">
+          
+          <!-- FAQ Item 1 -->
+          <div class="faq-card bg-[#0F172A] border border-white/[0.08] rounded-2xl overflow-hidden transition-colors hover:border-blue-500/30">
+            <button type="button" class="faq-btn w-full px-6 py-5 text-left flex items-center justify-between gap-4 focus:outline-none cursor-pointer">
+              <span class="text-sm sm:text-base font-bold text-white leading-snug">
+                What services do you offer in Nursing & Healthcare Technology?
+              </span>
+              <div class="w-8 h-8 rounded-full bg-[#0B1220] border border-white/10 flex items-center justify-center shrink-0">
+                <i class="faq-icon fa-solid fa-plus text-accentCyan text-xs transition-transform duration-300"></i>
+              </div>
+            </button>
+            <div class="faq-panel px-6 text-xs sm:text-sm text-bodyGrey leading-relaxed border-t border-white/[0.04]">
+              <div class="py-5">
+                I offer AI-powered nursing education solutions, healthcare workflow automation, nursing educational video production, AI-powered learning assistants, healthcare content creation, and digital platform development.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="faq-card bg-[#0F172A] border border-white/[0.08] rounded-2xl overflow-hidden transition-colors hover:border-blue-500/30">
+            <button type="button" class="faq-btn w-full px-6 py-5 text-left flex items-center justify-between gap-4 focus:outline-none cursor-pointer">
+              <span class="text-sm sm:text-base font-bold text-white leading-snug">
+                How can AI help nursing students and healthcare professionals?
+              </span>
+              <div class="w-8 h-8 rounded-full bg-[#0B1220] border border-white/10 flex items-center justify-center shrink-0">
+                <i class="faq-icon fa-solid fa-plus text-accentCyan text-xs transition-transform duration-300"></i>
+              </div>
+            </button>
+            <div class="faq-panel px-6 text-xs sm:text-sm text-bodyGrey leading-relaxed border-t border-white/[0.04]">
+              <div class="py-5">
+                AI can support nursing education through interactive learning assistants, MCQ practice, educational content generation, research support, automated learning resources, and simplified explanations of complex nursing concepts. All clinical information should be verified using reliable medical references.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="faq-card bg-[#0F172A] border border-white/[0.08] rounded-2xl overflow-hidden transition-colors hover:border-blue-500/30">
+            <button type="button" class="faq-btn w-full px-6 py-5 text-left flex items-center justify-between gap-4 focus:outline-none cursor-pointer">
+              <span class="text-sm sm:text-base font-bold text-white leading-snug">
+                Can you develop custom AI tools and automation systems for nursing institutions?
+              </span>
+              <div class="w-8 h-8 rounded-full bg-[#0B1220] border border-white/10 flex items-center justify-center shrink-0">
+                <i class="faq-icon fa-solid fa-plus text-accentCyan text-xs transition-transform duration-300"></i>
+              </div>
+            </button>
+            <div class="faq-panel px-6 text-xs sm:text-sm text-bodyGrey leading-relaxed border-t border-white/[0.04]">
+              <div class="py-5">
+                Yes. I can help design customized AI assistants, automated student support systems, nursing education platforms, examination management solutions, and digital workflows according to institutional requirements.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="faq-card bg-[#0F172A] border border-white/[0.08] rounded-2xl overflow-hidden transition-colors hover:border-blue-500/30">
+            <button type="button" class="faq-btn w-full px-6 py-5 text-left flex items-center justify-between gap-4 focus:outline-none cursor-pointer">
+              <span class="text-sm sm:text-base font-bold text-white leading-snug">
+                How can I contact you for projects or collaboration?
+              </span>
+              <div class="w-8 h-8 rounded-full bg-[#0B1220] border border-white/10 flex items-center justify-center shrink-0">
+                <i class="faq-icon fa-solid fa-plus text-accentCyan text-xs transition-transform duration-300"></i>
+              </div>
+            </button>
+            <div class="faq-panel px-6 text-xs sm:text-sm text-bodyGrey leading-relaxed border-t border-white/[0.04]">
+              <div class="py-5">
+                You can contact me through email, WhatsApp, LinkedIn, or my social media profiles to discuss nursing education projects, AI automation, healthcare technology solutions, and professional collaborations.
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 5: #contact (Contact Section - 2 Columns on Desktop) -->
+    <section id="contact" class="section-bg-main section-padding border-b border-borderLight relative">
+      <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="max-w-3xl mb-16 text-center mx-auto">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0F172A] border border-white/10 text-xs font-bold uppercase tracking-widest text-accentCyan mb-3">
+            GET IN TOUCH
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+            Let's Fix Your Business
+          </h2>
+          <p class="mt-3 text-sm sm:text-base text-mutedGrey max-w-2xl mx-auto leading-relaxed">
+            Tell me what's holding your revenue back, and let's build a strategy to overcome it.
+          </p>
+        </div>
+
+        <!-- 2 Columns Grid on Desktop -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
+          
+          <!-- Left Column: Glass Card with Contact Info & Google Map -->
+          <div class="lg:col-span-5 space-y-6">
+            
+            <!-- Glass Card -->
+            <div class="ds-card p-6 sm:p-8 bg-[#0F172A]/80 backdrop-blur-md border border-white/[0.08] rounded-[20px] space-y-6">
+              <div>
+                <h3 class="text-xl font-bold text-white mb-1.5">Direct Channels</h3>
+                <p class="text-xs sm:text-sm text-mutedGrey leading-relaxed">
+                  Reach out directly through any of these communication points for inquiries and collaborations.
+                </p>
+              </div>
+
+              <div class="space-y-4">
+                <!-- Office Location -->
+                <div class="flex items-start gap-4 p-3.5 rounded-xl bg-[#0B1220] border border-white/[0.06]">
+                  <div class="w-10 h-10 rounded-full bg-[#0F172A] border border-blue-500/30 flex items-center justify-center text-blue-400 text-sm shrink-0 shadow-sm">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div>
+                    <div class="text-[11px] font-semibold uppercase tracking-wider text-mutedGrey">Office Location</div>
+                    <div class="text-sm font-bold text-white mt-0.5">kodaliya Tangail</div>
+                  </div>
+                </div>
+
+                <!-- Email Address -->
+                <a href="mailto:aburaihan0306@gmail.com" class="flex items-start gap-4 p-3.5 rounded-xl bg-[#0B1220] border border-white/[0.06] hover:border-blue-500/40 transition-colors group">
+                  <div class="w-10 h-10 rounded-full bg-[#0F172A] border border-blue-500/30 flex items-center justify-center text-blue-400 text-sm shrink-0 shadow-sm group-hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div class="truncate">
+                    <div class="text-[11px] font-semibold uppercase tracking-wider text-mutedGrey">Email Address</div>
+                    <div class="text-sm font-bold text-white group-hover:text-accentCyan transition-colors truncate mt-0.5">aburaihan0306@gmail.com</div>
+                  </div>
+                </a>
+
+                <!-- WhatsApp Number -->
+                <a href="https://wa.me/8801959227346" target="_blank" rel="noopener noreferrer" class="flex items-start gap-4 p-3.5 rounded-xl bg-[#0B1220] border border-white/[0.06] hover:border-blue-500/40 transition-colors group">
+                  <div class="w-10 h-10 rounded-full bg-[#0F172A] border border-blue-500/30 flex items-center justify-center text-blue-400 text-sm shrink-0 shadow-sm group-hover:scale-105 transition-transform">
+                    <i class="fa-brands fa-whatsapp"></i>
+                  </div>
+                  <div>
+                    <div class="text-[11px] font-semibold uppercase tracking-wider text-mutedGrey">WhatsApp Number</div>
+                    <div class="text-sm font-bold text-white group-hover:text-accentCyan transition-colors mt-0.5">01959227346</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- Google Map of kodaliya Tangail (Dark Style, Grayscale becoming colour on hover) -->
+            <div class="group rounded-[20px] overflow-hidden border border-white/[0.08] bg-[#0F172A] p-2 transition-all">
+              <iframe 
+                src="https://maps.google.com/maps?q=Kodaliya,+Tangail,+Bangladesh&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                class="w-full h-56 border-0 rounded-[14px] filter grayscale contrast-125 invert-[88%] hue-rotate-180 group-hover:filter-none transition-all duration-500" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Office Location Map">
+              </iframe>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Contact Form with EXACTLY 4 Required Fields -->
+          <div class="lg:col-span-7">
+            <div class="ds-card p-6 sm:p-10 bg-[#0F172A] border border-white/[0.08] rounded-[20px]">
+              
+              <h3 class="text-xl font-bold text-white mb-2">Send a Message</h3>
+              <p class="text-xs sm:text-sm text-mutedGrey mb-6">
+                Fill in the details below and I will get back to you promptly.
+              </p>
+
+              <form id="contact-form" class="space-y-5">
+                
+                <!-- Fields 1 & 2: Name and Email side by side on desktop -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label for="form-name" class="block text-xs font-bold uppercase tracking-wider text-white mb-2">
+                      Your Name <span class="text-accentCyan">*</span>
+                    </label>
+                    <input type="text" id="form-name" name="Name" required placeholder="John Doe" 
+                           class="w-full px-4 py-3 rounded-xl bg-[#0B1220] border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all">
+                  </div>
+                  <div>
+                    <label for="form-email" class="block text-xs font-bold uppercase tracking-wider text-white mb-2">
+                      Email Address <span class="text-accentCyan">*</span>
+                    </label>
+                    <input type="email" id="form-email" name="Email" required placeholder="john@example.com" 
+                           class="w-full px-4 py-3 rounded-xl bg-[#0B1220] border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all">
+                  </div>
+                </div>
+
+                <!-- Field 3: WhatsApp Number, Full Width -->
+                <div>
+                  <label for="form-whatsapp" class="block text-xs font-bold uppercase tracking-wider text-white mb-2">
+                    WhatsApp Number <span class="text-accentCyan">*</span>
+                  </label>
+                  <input type="tel" id="form-whatsapp" name="WhatsApp" required placeholder="e.g. +1 234 567 8900" 
+                         class="w-full px-4 py-3 rounded-xl bg-[#0B1220] border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all">
+                </div>
+
+                <!-- Field 4: Describe Your Problem, Full Width Textarea -->
+                <div>
+                  <label for="form-message" class="block text-xs font-bold uppercase tracking-wider text-white mb-2">
+                    Describe Your Problem <span class="text-accentCyan">*</span>
+                  </label>
+                  <textarea id="form-message" name="Message" rows="4" required placeholder="Explain what issues your business is currently facing..." 
+                            class="w-full px-4 py-3 rounded-xl bg-[#0B1220] border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all resize-y"></textarea>
+                </div>
+
+                <!-- Submit Button: Full-Width Gradient Pill Button -->
+                <div class="pt-2">
+                  <button type="submit" id="submit-btn" 
+                          class="btn-pill-primary w-full py-4 text-sm sm:text-base font-bold flex items-center justify-center gap-2.5 shadow-lg shadow-blue-600/30">
+                    <span>Send Message</span>
+                    <i class="fa-solid fa-paper-plane text-xs"></i>
+                  </button>
+                </div>
+
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Toast Notification Container -->
+      <div id="contact-toast" class="hidden fixed bottom-6 right-6 z-50 px-6 py-4 rounded-2xl shadow-2xl text-sm font-bold flex items-center gap-3 transition-all duration-300"></div>
+    </section>
+
+    
+
+  </main>
+
+
+  <!-- ========================================================
+       GLOBAL FOOTER (3 Columns Desktop, 1 Column Mobile)
+       ======================================================== -->
+  <footer class="bg-[#060B14] border-t border-white/[0.08] pt-16 pb-12 relative">
+    <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- 3 Columns Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-12 pb-14">
+        
+        <!-- Left Column: Name, Short Bio, Social Icons -->
+        <div class="space-y-4">
+          <h3 class="text-xl sm:text-2xl font-bold text-white tracking-tight">
+            Abu Raihan
+          </h3>
+          <p class="text-xs sm:text-sm text-bodyGrey leading-relaxed max-w-sm">
+            Nurse Abu Raihan | Healthcare Professional | Registered Nurse. Committed to compassionate care, clinical knowledge, nursing excellence, and health education. Believe in the power of knowledge, humanity, and continuous learning to build a healthier society.
+          </p>
+
+          <!-- 5 Social Icons in Dark Circles: Facebook, LinkedIn, GitHub, WhatsApp, Telegram -->
+          <div class="pt-2 flex flex-wrap items-center gap-2.5">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" 
+               aria-label="Facebook Profile" 
+               class="w-9 h-9 rounded-full bg-[#0B1220] border border-white/10 text-mutedGrey hover:text-white hover:border-[#2563EB] hover:bg-[#2563EB]/10 flex items-center justify-center transition-all shadow-sm">
+              <i class="fa-brands fa-facebook-f text-xs"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/rnaburaihan/" target="_blank" rel="noopener noreferrer" 
+               aria-label="LinkedIn Profile" 
+               class="w-9 h-9 rounded-full bg-[#0B1220] border border-white/10 text-mutedGrey hover:text-white hover:border-[#2563EB] hover:bg-[#2563EB]/10 flex items-center justify-center transition-all shadow-sm">
+              <i class="fa-brands fa-linkedin-in text-xs"></i>
+            </a>
+            <a href="https://www.github.com/" target="_blank" rel="noopener noreferrer" 
+               aria-label="GitHub Profile" 
+               class="w-9 h-9 rounded-full bg-[#0B1220] border border-white/10 text-mutedGrey hover:text-white hover:border-[#2563EB] hover:bg-[#2563EB]/10 flex items-center justify-center transition-all shadow-sm">
+              <i class="fa-brands fa-github text-xs"></i>
+            </a>
+            <a href="https://wa.me/8801959227346" target="_blank" rel="noopener noreferrer" 
+               aria-label="WhatsApp" 
+               class="w-9 h-9 rounded-full bg-[#0B1220] border border-white/10 text-mutedGrey hover:text-white hover:border-[#22C55E] hover:bg-[#22C55E]/10 flex items-center justify-center transition-all shadow-sm">
+              <i class="fa-brands fa-whatsapp text-xs text-accentGreen"></i>
+            </a>
+            <a href="https://www.telegram.com/" target="_blank" rel="noopener noreferrer" 
+               aria-label="Telegram Profile" 
+               class="w-9 h-9 rounded-full bg-[#0B1220] border border-white/10 text-mutedGrey hover:text-white hover:border-[#22D3EE] hover:bg-[#22D3EE]/10 flex items-center justify-center transition-all shadow-sm">
+              <i class="fa-brands fa-telegram text-xs text-accentCyan"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Middle Column: Quick Links -->
+        <div class="space-y-4">
+          <h3 class="text-base sm:text-lg font-bold text-white tracking-tight">
+            Quick Links
+          </h3>
+          <ul class="space-y-2.5 text-xs sm:text-sm">
+            <li>
+              <a href="#home" class="text-bodyGrey hover:text-white transition-colors flex items-center gap-2">
+                <i class="fa-solid fa-chevron-right text-[10px] text-accentCyan"></i>
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="#about" class="text-bodyGrey hover:text-white transition-colors flex items-center gap-2">
+                <i class="fa-solid fa-chevron-right text-[10px] text-accentCyan"></i>
+                <span>About Me</span>
+              </a>
+            </li>
+            <li>
+              <a href="#services" class="text-bodyGrey hover:text-white transition-colors flex items-center gap-2">
+                <i class="fa-solid fa-chevron-right text-[10px] text-accentCyan"></i>
+                <span>Solutions</span>
+              </a>
+            </li>
+            <li>
+              <a href="#results" class="text-bodyGrey hover:text-white transition-colors flex items-center gap-2">
+                <i class="fa-solid fa-chevron-right text-[10px] text-accentCyan"></i>
+                <span>Case Studies</span>
+              </a>
+            </li>
+            <li>
+              <a href="#contact" class="text-bodyGrey hover:text-white transition-colors flex items-center gap-2">
+                <i class="fa-solid fa-chevron-right text-[10px] text-accentCyan"></i>
+                <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right Column: Contact Info (3 Items) -->
+        <div class="space-y-4">
+          <h3 class="text-base sm:text-lg font-bold text-white tracking-tight">
+            Contact Info
+          </h3>
+          
+          <div class="space-y-3.5">
+            <!-- 1. Office Location -->
+            <div class="flex items-start gap-3.5">
+              <div class="w-9 h-9 rounded-full bg-[#0B1220] border border-blue-500/30 flex items-center justify-center text-blue-400 text-xs shrink-0 shadow-sm mt-0.5">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <div class="text-xs sm:text-sm font-bold text-white leading-tight">Office Location</div>
+                <div class="text-xs text-bodyGrey mt-0.5">kodaliya Tangail</div>
+              </div>
+            </div>
+
+            <!-- 2. Email Address -->
+            <div class="flex items-start gap-3.5">
+              <div class="w-9 h-9 rounded-full bg-[#0B1220] border border-blue-500/30 flex items-center justify-center text-blue-400 text-xs shrink-0 shadow-sm mt-0.5">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="truncate">
+                <div class="text-xs sm:text-sm font-bold text-white leading-tight">Email Address</div>
+                <a href="mailto:aburaihan0306@gmail.com" class="text-xs text-bodyGrey hover:text-accentCyan transition-colors truncate block mt-0.5">aburaihan0306@gmail.com</a>
+              </div>
+            </div>
+
+            <!-- 3. WhatsApp Number -->
+            <div class="flex items-start gap-3.5">
+              <div class="w-9 h-9 rounded-full bg-[#0B1220] border border-blue-500/30 flex items-center justify-center text-blue-400 text-xs shrink-0 shadow-sm mt-0.5">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <div>
+                <div class="text-xs sm:text-sm font-bold text-white leading-tight">WhatsApp Number</div>
+                <a href="https://wa.me/8801959227346" target="_blank" rel="noopener noreferrer" class="text-xs text-bodyGrey hover:text-accentGreen transition-colors mt-0.5 block">01959227346</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar with Thin Top Border -->
+      <div class="pt-8 border-t border-white/[0.08] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-mutedGrey">
+        <div>
+          &copy; <span id="current-year">2026</span> Abu Raihan. All rights reserved. | <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+        </div>
+        <div>
+          <a href="#home" class="hover:text-accentCyan transition-colors flex items-center gap-1.5">
+            <span>Back to top</span>
+            <i class="fa-solid fa-arrow-up text-[10px]"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- ========================================================
+       VANILLA JAVASCRIPT: Loading Screen & System Initialization
+       ======================================================== -->
+  <script>
+    // Editable Submission Configurations
+    const TELEGRAM_BOT_TOKEN = "{{TELEGRAM_BOT_TOKEN}}";
+    const TELEGRAM_CHAT_ID = "{{TELEGRAM_CHAT_ID}}";
+    const GOOGLE_SCRIPT_URL = "https://script.googleusercontent.com/macros/echo?user_content_key=AUkAhnQQMZebqfzuP8X2nUKYny1w6RitQ7Jb1mkwvWaY1FwkpVSsIy6m72tyr4GMuB5a16vuzq2cW-_fAD0eghGcAfySi25MtaUz8KJotFaiPHHr8_uITshyRmuzPu6LVipdjhxuYmaLoJF6tbDiVNcmzXX7_DlLKUptcvAQlqj-AFAw2SQmbzEWJfaQeeX62LqMM43fbQDBfyVE6NlQZ7sjWKdtSHSja37JDOuQKWQb-HasyPwpFwTeGIwCJtj2YAcFKSQKu8pGfKLU3vpAsl0YJXvPGlXRDw&lib=M0RcsODpC92MHOOHMwvYKvSJ51K4EHMtn";
+
+    document.addEventListener('DOMContentLoaded', () => {
+      
+      // Update copyright year
+      const yearSpan = document.getElementById('current-year');
+      if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+      }
+
+      // Simple Loading Screen Animation
+      const loadingScreen = document.getElementById('loading-screen');
+      const loadingProgressBar = document.getElementById('loading-progress');
+      const percentageLabel = document.getElementById('loading-percentage');
+
+      let loadingHidden = false;
+      function hideLoadingScreen() {
+        if (loadingHidden) return;
+        loadingHidden = true;
+        if (loadingProgressBar) loadingProgressBar.style.width = '100%';
+        if (percentageLabel) percentageLabel.textContent = '100%';
+        if (loadingScreen) {
+          loadingScreen.classList.add('fade-out');
+        }
+      }
+
+      let progress = 0;
+      const interval = setInterval(() => {
+        // Increment progress smoothly
+        progress += Math.floor(Math.random() * 14) + 6;
+        if (progress > 100) progress = 100;
+
+        if (loadingProgressBar) loadingProgressBar.style.width = progress + '%';
+        if (percentageLabel) percentageLabel.textContent = progress + '%';
+
+        if (progress >= 100) {
+          clearInterval(interval);
+          setTimeout(hideLoadingScreen, 350);
+        }
+      }, 45);
+
+      window.addEventListener('load', () => {
+        setTimeout(() => {
+          clearInterval(interval);
+          hideLoadingScreen();
+        }, 400);
+      });
+      setTimeout(() => {
+        clearInterval(interval);
+        hideLoadingScreen();
+      }, 2500);
+
+      // Mobile Hamburger Menu Toggle
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const menuIcon = document.getElementById('menu-icon');
+      const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+      if (mobileMenuBtn && mobileMenu && menuIcon) {
+        mobileMenuBtn.addEventListener('click', () => {
+          const isHidden = mobileMenu.classList.contains('hidden');
+          if (isHidden) {
+            mobileMenu.classList.remove('hidden');
+            menuIcon.classList.remove('fa-bars');
+            menuIcon.classList.add('fa-xmark');
+          } else {
+            mobileMenu.classList.add('hidden');
+            menuIcon.classList.remove('fa-xmark');
+            menuIcon.classList.add('fa-bars');
+          }
+        });
+
+        mobileNavLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            menuIcon.classList.remove('fa-xmark');
+            menuIcon.classList.add('fa-bars');
+          });
+        });
+      }
+
+      // Typewriter Effect for Hero Section
+      const typewriterElement = document.getElementById('hero-typewriter');
+      if (typewriterElement) {
+        const phrases = [
+          "Nursing Workflow Automations",
+          "AI Healthcare Videos",
+          "Programmatic Remotion Videos",
+          "Custom AI Nursing Agents",
+          "Healthcare Decision Support"
+        ];
+        let phraseIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const typeSpeed = 70;
+        const deleteSpeed = 35;
+        const pauseEnd = 1600;
+
+        function typeLoop() {
+          const currentPhrase = phrases[phraseIndex];
+          if (isDeleting) {
+            typewriterElement.textContent = currentPhrase.substring(0, charIndex - 1);
+            charIndex--;
+          } else {
+            typewriterElement.textContent = currentPhrase.substring(0, charIndex + 1);
+            charIndex++;
+          }
+
+          let delay = isDeleting ? deleteSpeed : typeSpeed;
+
+          if (!isDeleting && charIndex === currentPhrase.length) {
+            delay = pauseEnd;
+            isDeleting = true;
+          } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            phraseIndex = (phraseIndex + 1) % phrases.length;
+            delay = 350;
+          }
+
+          setTimeout(typeLoop, delay);
+        }
+
+        typeLoop();
+      }
+
+      // Vertical Scroll Progress Bar (Right Edge)
+      const scrollProgressBar = document.getElementById('scroll-progress-bar');
+      window.addEventListener('scroll', () => {
+        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        if (scrollProgressBar && height > 0) {
+          const scrolled = (winScroll / height) * 100;
+          scrollProgressBar.style.height = scrolled + '%';
+        }
+      });
+
+      // Smooth Anchor Link Scrolling with Header Offset
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          const targetId = this.getAttribute('href');
+          if (targetId && targetId !== '#' && targetId.startsWith('#')) {
+            const targetEl = document.querySelector(targetId);
+            if (targetEl) {
+              e.preventDefault();
+              const headerOffset = 76;
+              const elementPosition = targetEl.getBoundingClientRect().top;
+              const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+              window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+              });
+            }
+          }
+        });
+      });
+
+      // Fade and Slide-In Scroll Reveal for Sections & Cards
+      const revealItems = document.querySelectorAll('section > div.max-w-\\[1200px\\], .ds-card');
+      const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+
+      revealItems.forEach(el => {
+        el.classList.add('reveal-on-scroll');
+        revealObserver.observe(el);
+      });
+
+      // Count-Up Numbers Animation for All Stats (About & Stats Band)
+      const statContainers = document.querySelectorAll('#about, #stats-band');
+      statContainers.forEach(container => {
+        let counted = false;
+        const numbers = container.querySelectorAll('.count-up-number');
+        if (numbers.length > 0) {
+          const observer = new IntersectionObserver((entries, obs) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting && !counted) {
+                counted = true;
+                numbers.forEach(counter => {
+                  const target = +counter.getAttribute('data-target');
+                  const duration = 1600;
+                  const stepTime = 25;
+                  const steps = duration / stepTime;
+                  const increment = target / steps;
+                  let current = 0;
+
+                  const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                      counter.textContent = target;
+                      clearInterval(timer);
+                    } else {
+                      counter.textContent = Math.ceil(current);
+                    }
+                  }, stepTime);
+                });
+                obs.disconnect();
+              }
+            });
+          }, { threshold: 0.2 });
+
+          observer.observe(container);
+        }
+      });
+
+      // FAQ Accordion (Multiple items can stay open simultaneously with smooth animation)
+      const faqButtons = document.querySelectorAll('.faq-btn');
+      faqButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const panel = btn.nextElementSibling;
+          const icon = btn.querySelector('.faq-icon');
+          const isOpen = panel.classList.contains('open') || panel.classList.contains('active');
+
+          if (isOpen) {
+            panel.classList.remove('open', 'active');
+            icon.classList.remove('fa-minus');
+            icon.classList.add('fa-plus');
+          } else {
+            panel.classList.add('open', 'active');
+            icon.classList.remove('fa-plus');
+            icon.classList.add('fa-minus');
+          }
+        });
+      });
+
+      // Contact Form Submission Handler (Google Sheet + Telegram)
+      const contactForm = document.getElementById('contact-form');
+      const submitBtn = document.getElementById('submit-btn');
+      const toast = document.getElementById('contact-toast');
+
+      function showToast(message, isSuccess = true) {
+        if (!toast) return;
+        toast.textContent = message;
+        toast.className = `fixed bottom-6 right-6 z-50 px-6 py-4 rounded-2xl shadow-2xl text-sm font-bold flex items-center gap-2.5 transition-all duration-300 ${
+          isSuccess ? 'bg-emerald-600 text-white shadow-emerald-600/30' : 'bg-rose-600 text-white shadow-rose-600/30'
+        }`;
+        toast.classList.remove('hidden');
+
+        if (isSuccess) {
+          setTimeout(() => {
+            toast.classList.add('hidden');
+          }, 3000);
+        }
+      }
+
+      if (contactForm && submitBtn) {
+        const originalBtnHtml = submitBtn.innerHTML;
+
+        contactForm.addEventListener('submit', async (e) => {
+          e.preventDefault();
+
+          submitBtn.disabled = true;
+          submitBtn.innerHTML = '<span>Sending...</span>';
+
+          const formData = new FormData(contactForm);
+
+          let googlePromise = null;
+          let telegramPromise = null;
+
+          const isPlaceholder = (val) => !val || val.trim() === "" || val.startsWith("{{");
+
+          // 3. Send to Google Sheet (mode: 'no-cors')
+          if (!isPlaceholder(GOOGLE_SCRIPT_URL)) {
+            googlePromise = fetch(GOOGLE_SCRIPT_URL, {
+              method: 'POST',
+              body: formData,
+              mode: 'no-cors'
+            });
+          }
+
+          // 4. Send to Telegram (plain text only)
+          if (!isPlaceholder(TELEGRAM_BOT_TOKEN) && !isPlaceholder(TELEGRAM_CHAT_ID)) {
+            telegramPromise = fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                chat_id: TELEGRAM_CHAT_ID,
+                text: `New Client Inquiry!\n\nName: ${formData.get('Name')}\nEmail: ${formData.get('Email')}\nWhatsApp: ${formData.get('WhatsApp')}\n\nProblem Description:\n${formData.get('Message')}`
+              })
+            }).then((res) => {
+              if (!res.ok) throw new Error('Telegram API error');
+              return res;
+            });
+          }
+
+          // 5. Run BOTH requests together with Promise.all
+          const requests = [googlePromise, telegramPromise].filter(Boolean);
+
+          try {
+            if (requests.length > 0) {
+              await Promise.all(requests);
+            }
+            // 6. On success
+            showToast("Message sent successfully!", true);
+            contactForm.reset();
+          } catch (error) {
+            // 7. On failure
+            showToast("Failed to send a message. Please try again.", false);
+          } finally {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalBtnHtml;
+          }
+        });
+      }
+
+    });
+  </script>
+</body>
+</html>
